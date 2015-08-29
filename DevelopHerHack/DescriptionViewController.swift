@@ -12,7 +12,7 @@ class DescriptionViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var newTitle: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
-    var placeholderText = "description of task"
+    var placeholderText = "Description"
     
     override func viewDidLoad() {
         super.viewDidLoad()

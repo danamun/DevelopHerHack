@@ -20,8 +20,6 @@ let BUTTONBORDER: CGFloat = 1
 
 var colorArray  = NSArray(objects: LIGHTERORANGE, DARKERBLUE, DARKESTGRAY)
 func setupMainPageVC(window: UIWindow?) {
-    
-    
     // Creating the tab bar.
     let tabBarController = UITabBarController()
     var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")

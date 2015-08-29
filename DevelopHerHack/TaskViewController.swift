@@ -121,6 +121,7 @@ class TaskViewController: MainPageTableViewController {
     
     var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell : TaskTableViewCell = tableView.cellForRowAtIndexPath(indexPath) as! TaskTableViewCell
         selectedRowIndex = indexPath
         tableView.beginUpdates()
         tableView.endUpdates()

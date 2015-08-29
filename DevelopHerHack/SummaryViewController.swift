@@ -29,7 +29,6 @@ class SummaryViewController: UIViewController {
         self.view.backgroundColor = LIGHTERGRAY
         finishButton.layer.borderWidth = BUTTONBORDER
         finishButton.layer.borderColor = DARKERBLUE.CGColor
-        
     }
 
     @IBAction func onFinish(sender: UIButton) {

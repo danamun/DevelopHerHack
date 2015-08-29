@@ -55,12 +55,7 @@ class MoneyViewController: UIViewController {
         }
         
         var summaryVC = SummaryViewController(nibName: "SummaryViewController", bundle: nil)
-        
-//        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(summaryVC, animated: true
-        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(summaryVC, animated: true, completion: { () -> Void in
-            println("Complete in MoneyViewController");
-         
-        })
+        setupMainPageVC(UIApplication.sharedApplication().keyWindow)
         
     }
 
