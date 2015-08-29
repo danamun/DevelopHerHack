@@ -39,6 +39,8 @@
 		D02356341B91CA940016ED9B /* historyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356311B91CA940016ED9B /* historyIcon.png */; };
 		D02356351B91CA940016ED9B /* homeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356321B91CA940016ED9B /* homeIcon.png */; };
 		D02356371B91D6400016ED9B /* avatarsPenguin.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356361B91D6400016ED9B /* avatarsPenguin.png */; };
+		D023563F1B92019E0016ED9B /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023563D1B92019E0016ED9B /* TaskTableViewCell.swift */; };
+		D02356401B92019E0016ED9B /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D023563E1B92019E0016ED9B /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		D02356311B91CA940016ED9B /* historyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historyIcon.png; sourceTree = "<group>"; };
 		D02356321B91CA940016ED9B /* homeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon.png; sourceTree = "<group>"; };
 		D02356361B91D6400016ED9B /* avatarsPenguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarsPenguin.png; sourceTree = "<group>"; };
+		D023563D1B92019E0016ED9B /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		D023563E1B92019E0016ED9B /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 				9CD6604F1B91730E0051C485 /* MainPageTableViewController.swift */,
 				9CD6605B1B917B1C0051C485 /* MainPageTableViewCell.swift */,
 				9CD6605C1B917B1C0051C485 /* MainPageTableViewCell.xib */,
+				D023563D1B92019E0016ED9B /* TaskTableViewCell.swift */,
+				D023563E1B92019E0016ED9B /* TaskTableViewCell.xib */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
 				9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */,
+				D02356401B92019E0016ED9B /* TaskTableViewCell.xib in Resources */,
 				9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */,
 				9CD6605E1B917B1C0051C485 /* MainPageTableViewCell.xib in Resources */,
 				9CD660731B91C07E0051C485 /* AvatarViewController.xib in Resources */,
@@ -410,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D023563F1B92019E0016ED9B /* TaskTableViewCell.swift in Sources */,
 				9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */,
 				9CD660801B91C14C0051C485 /* SummaryViewController.swift in Sources */,
 				9CD6606E1B91ABCB0051C485 /* CustomHeaderCell.swift in Sources */,
