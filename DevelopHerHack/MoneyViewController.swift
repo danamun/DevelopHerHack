@@ -11,12 +11,17 @@ import UIKit
 class MoneyViewController: UIViewController {
     
     @IBOutlet weak var moneyLabel: UITextField!
+    @IBOutlet weak var createButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        println("MONEYCONTROLLER CREATED");
+        self.view.backgroundColor = LIGHTERGRAY
+        createButton.layer.borderWidth = BUTTONBORDER
+        createButton.layer.borderColor = DARKERBLUE.CGColor
+        
+
     }
     
     override func didReceiveMemoryWarning() {
