@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880863B98D36B3416BB1229B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC3D01EEA4689AEBD9035E0 /* libPods.a */; };
 		9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660281B9170B50051C485 /* AppDelegate.swift */; };
 		9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6602A1B9170B50051C485 /* ViewController.swift */; };
 		9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6602C1B9170B50051C485 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C2B4ECCD6021EB7CD6D506C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9CD660231B9170B50051C485 /* DevelopHerHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopHerHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD660271B9170B50051C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD660281B9170B50051C485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		9CD660381B9170B50051C485 /* DevelopHerHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopHerHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD6603D1B9170B50051C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopHerHackTests.swift; sourceTree = "<group>"; };
+		BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC3D01EEA4689AEBD9035E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880863B98D36B3416BB1229B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				9CD660251B9170B50051C485 /* DevelopHerHack */,
 				9CD6603B1B9170B50051C485 /* DevelopHerHackTests */,
 				9CD660241B9170B50051C485 /* Products */,
+				C82BA33B3C0E8F650C27D105 /* Pods */,
+				C1EF208E77F13B060B7DBE66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C1EF208E77F13B060B7DBE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3D01EEA4689AEBD9035E0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C82BA33B3C0E8F650C27D105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */,
+				4C2B4ECCD6021EB7CD6D506C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CD660421B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHack" */;
 			buildPhases = (
+				A6B8909411B0AB26225E5754 /* Check Pods Manifest.lock */,
 				9CD6601F1B9170B50051C485 /* Sources */,
 				9CD660201B9170B50051C485 /* Frameworks */,
 				9CD660211B9170B50051C485 /* Resources */,
+				6961E8C88F2F86C1C147BB6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +232,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6961E8C88F2F86C1C147BB6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B8909411B0AB26225E5754 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CD6601F1B9170B50051C485 /* Sources */ = {
@@ -338,6 +397,7 @@
 		};
 		9CD660431B9170B50051C485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevelopHerHack/Info.plist;
@@ -348,6 +408,7 @@
 		};
 		9CD660441B9170B50051C485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2B4ECCD6021EB7CD6D506C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevelopHerHack/Info.plist;
@@ -409,6 +470,7 @@
 				9CD660441B9170B50051C485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CD660451B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHackTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +479,7 @@
 				9CD660471B9170B50051C485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
