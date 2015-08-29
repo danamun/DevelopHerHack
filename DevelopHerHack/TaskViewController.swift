@@ -37,27 +37,30 @@ class TaskViewController: MainPageTableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
         
-        var cell:MainPageTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? MainPageTableViewCell
+        var cell:TaskTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? TaskTableViewCell
         
         if(cell == nil) {
-            cell = NSBundle.mainBundle().loadNibNamed("MainPageTableViewCell", owner: self, options: nil)[0] as? MainPageTableViewCell
+            cell = NSBundle.mainBundle().loadNibNamed("TaskTableViewCell", owner: self, options: nil)[0] as? TaskTableViewCell
         }
         
         if let pfObject = object {
             // Set Cell's items here
-            cell?.username?.text = pfObject["towho"]!.username
+            cell?.whom.text = pfObject["towho"]!.username!
+            println("whom: ");
             var t = String(stringInterpolationSegment: pfObject["value"]!)
             cell?.money.text = t
             
-            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
-            finalImage!.getDataInBackgroundWithBlock {
-                (imageData: NSData?, error: NSError?) -> Void in
-                if error == nil {
-                    if let imageData = imageData {
-                        cell?.avatar?.image = UIImage(data:imageData)
-                    }
-                }
-            }
+            cell?.taskTitle.text = pfObject["title"]! as! String
+            cell?.taskDescription.text = pfObject["description"]! as! String
+//            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
+//            finalImage!.getDataInBackgroundWithBlock {
+//                (imageData: NSData?, error: NSError?) -> Void in
+//                if error == nil {
+//                    if let imageData = imageData {
+//                        cell?.avatar?.image = UIImage(data:imageData)
+//                    }
+//                }
+//            }
         }
         
         return cell
