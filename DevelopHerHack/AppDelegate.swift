@@ -31,9 +31,9 @@ func setupMainPageVC(window: UIWindow?) {
     let firstImage = UIImage(named: "createIcon")
     let secondImage = UIImage(named: "homeIcon")
     let thirdImage = UIImage(named: "historyIcon")
-    createTaskVC.tabBarItem = UITabBarItem(title: "", image: firstImage, tag: 1)
-    taskVC.tabBarItem = UITabBarItem(title: "", image: secondImage, tag: 2)
-    mainVC.tabBarItem = UITabBarItem(title: "", image: thirdImage, tag: 3)
+    createTaskVC.tabBarItem = UITabBarItem(title: "Create", image: firstImage, tag: 1)
+    taskVC.tabBarItem = UITabBarItem(title: "Home", image: secondImage, tag: 2)
+    mainVC.tabBarItem = UITabBarItem(title: "History", image: thirdImage, tag: 3)
     
     
     let frame = UIScreen.mainScreen().bounds
