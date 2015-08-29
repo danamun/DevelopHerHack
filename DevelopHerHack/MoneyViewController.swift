@@ -9,18 +9,41 @@
 import UIKit
 
 class MoneyViewController: UIViewController {
-
+    
+    @IBOutlet weak var moneyLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func moneyValue(sender: AnyObject) {
+        taskMoney = (moneyLabel.text as NSString).floatValue
+    }
     
+    @IBAction func clickCreate(sender: AnyObject) {
+        taskMoney = (moneyLabel.text as NSString).floatValue
+        let query = PFUser.query()?.whereKey("username", equalTo: taskAvatar!)
+        print("task avatar: \(taskAvatar)!")
+        var otheruser : PFUser = query?.getFirstObject() as! PFUser
+        
+        var task = PFObject(className: "FamilyTasks")
+        task.setObject(taskTitle!, forKey: "title")
+        task.setObject(taskDescription!, forKey: "description")
+        task.setObject(taskMoney!, forKey: "value")
+        task.setObject(otheruser, forKey: "towho")
+        task.setObject(PFUser.currentUser()!, forKey: "fromwho")
+        task.setObject(false, forKey: "completed")
+        task.saveInBackground()
+        
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AvatarViewController" customModule="DevelopHerHack" customModuleProvider="target">
             <connections>
+                <outlet property="avatar1" destination="QJx-al-st9" id="gkf-dw-qSk"/>
+                <outlet property="avatar2" destination="efp-FF-AsE" id="tfM-th-2fD"/>
+                <outlet property="avatar3" destination="K5B-lI-3wa" id="gKu-C3-sLS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +16,54 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose Avatar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13j-gY-8YP">
+                    <rect key="frame" x="241" y="226" width="113" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJx-al-st9">
+                    <rect key="frame" x="106" y="344" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickedAvatar1:" destination="-1" eventType="touchUpInside" id="MQh-ea-QgL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efp-FF-AsE">
+                    <rect key="frame" x="274" y="344" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickedAvatar2:" destination="-1" eventType="touchUpInside" id="v10-gT-b5M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-lI-3wa">
+                    <rect key="frame" x="449" y="344" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickedAvatar3:" destination="-1" eventType="touchUpInside" id="63C-E4-z3n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="efp-FF-AsE" firstAttribute="top" secondItem="13j-gY-8YP" secondAttribute="bottom" constant="50" id="1Ao-8d-wjd"/>
+                <constraint firstItem="K5B-lI-3wa" firstAttribute="leading" secondItem="efp-FF-AsE" secondAttribute="trailing" constant="20" id="Cpq-RL-Kbs"/>
+                <constraint firstAttribute="centerX" secondItem="efp-FF-AsE" secondAttribute="centerX" id="Npi-Jq-2CO"/>
+                <constraint firstItem="QJx-al-st9" firstAttribute="top" secondItem="K5B-lI-3wa" secondAttribute="top" id="QhF-ta-gjO"/>
+                <constraint firstAttribute="centerY" secondItem="QJx-al-st9" secondAttribute="centerY" id="ZkX-Gk-NEM"/>
+                <constraint firstItem="efp-FF-AsE" firstAttribute="leading" secondItem="QJx-al-st9" secondAttribute="trailing" constant="20" id="ahr-cV-2Dj"/>
+                <constraint firstAttribute="centerX" secondItem="13j-gY-8YP" secondAttribute="centerX" id="d72-D1-LlD"/>
+                <constraint firstAttribute="centerY" secondItem="efp-FF-AsE" secondAttribute="centerY" id="oqM-ql-WOz"/>
+                <constraint firstItem="QJx-al-st9" firstAttribute="top" secondItem="efp-FF-AsE" secondAttribute="top" id="tuh-eS-A0g"/>
+                <constraint firstAttribute="centerY" secondItem="K5B-lI-3wa" secondAttribute="centerY" id="vfw-5Y-nvu"/>
+            </constraints>
         </view>
     </objects>
 </document>
