@@ -14,10 +14,18 @@ class AvatarViewController: UIViewController {
     @IBOutlet weak var avatar1: UIButton!
     @IBOutlet weak var avatar2: UIButton!
     @IBOutlet weak var avatar3: UIButton!
+    @IBOutlet weak var avatar4: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Hardcoding the button avatar images for now.
+        var a1 : UIImageView = UIImageView(image: UIImage(named: "avatarsDog"))
+        avatar1.addSubview(a1)
+        self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0))
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,21 +38,31 @@ class AvatarViewController: UIViewController {
         avatar1.selected = true
         avatar2.selected = false
         avatar3.selected = false
-        taskAvatar = "kevin"
+        avatar4.selected = false
+        taskAvatar = "lily"
     }
     @IBAction func clickedAvatar2(sender: AnyObject) {
         avatar1.selected = false
         avatar2.selected = true
         avatar3.selected = false
-        taskAvatar = "dana"
+        avatar4.selected = false
+        taskAvatar = "betsy"
     }
     @IBAction func clickedAvatar3(sender: AnyObject) {
         avatar1.selected = false
         avatar2.selected = false
         avatar3.selected = true
-        taskAvatar = "betsy"
+        avatar4.selected = false
+        taskAvatar = "kevin"
     }
     
+    @IBAction func clickedAvatar4(sender: AnyObject) {
+        avatar1.selected = false
+        avatar2.selected = false
+        avatar3.selected = false
+        avatar4.selected = true
+        taskAvatar = "dana"
+    }
     /*
     // MARK: - Navigation
 
