@@ -13,12 +13,6 @@ class CustomHeaderCell: UITableViewCell {
     @IBOutlet weak var money: UILabel!
     @IBOutlet weak var username: UILabel!
     
-    /*override func init() {
-        username.text = PFUser.currentUser()?.username
-        var temp : Int = PFUser.currentUser()?.valueForKey("money") as! Int
-        money.text = "$\(temp)"
-    }*/
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

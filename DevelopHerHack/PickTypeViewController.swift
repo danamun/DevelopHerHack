@@ -12,6 +12,7 @@ class PickTypeViewController: UIViewController {
     @IBOutlet weak var parentButton: UIButton!
     @IBOutlet weak var childButton: UIButton!
     @IBOutlet weak var buttonContainer: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,8 +45,6 @@ class PickTypeViewController: UIViewController {
         logInVC.type = "Parent"
         self.presentViewController(logInVC, animated: true, completion: nil)
     }
-
-    
 
     /*
     // MARK: - Navigation

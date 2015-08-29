@@ -86,7 +86,7 @@ class LoginViewController: UIViewController {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.setMainViewController()
+                    setupMainPageVC(self.view.window)
                 }
             } else {
                 self.activityIndicator.stopAnimating()
@@ -107,19 +107,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func setMainViewController() {
-        var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
-//        UINavigationBar.appearance().tintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-//        UINavigationBar.appearance().barTintColor = UIColor(red: 0.59, green: 1.0, blue: 0.80, alpha: 1.0)
-//        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
-        
-        var navigationVC:UINavigationController = UINavigationController(rootViewController: mainVC)
-        navigationVC.title = username.text
-        
-        self.view.window?.rootViewController = navigationVC
-    }
     
     func processSignUp() {
         var userName = username.text
@@ -142,7 +129,7 @@ class LoginViewController: UIViewController {
             (succeeded: Bool, error: NSError?) -> Void in
             if error == nil {
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.setMainViewController()
+                    setupMainPageVC(self.view.window)
                 }
             } else {
                 self.activityIndicator.stopAnimating()
