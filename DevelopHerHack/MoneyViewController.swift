@@ -16,6 +16,7 @@ class MoneyViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        println("MONEYCONTROLLER CREATED");
     }
     
     override func didReceiveMemoryWarning() {

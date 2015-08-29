@@ -39,6 +39,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         self.addChildViewController(self.pageVC)
         self.view.addSubview(self.pageVC.view)
         //self.pageVC.didMoveToParentViewController(self)
+        println("viewDidLoad:: index: \(index)");
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +58,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     */
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
-        print("index at viewcontrollerindex: \(index)\n")
+        println("index at viewcontrollerindex: \(index)")
         if (index > 3) {
             return UIViewController()
         }
@@ -68,12 +69,16 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         
         switch(index) {
         case 0:
+            println("Return Avatar")
             return avatarVC
         case 1:
+            println("Return Description")
             return descriptionVC
         case 2:
+            println("Return Money")
             return moneyVC
         case 3:
+            println("Return Summary")
             return summaryVC
         default:
             return nil
@@ -82,23 +87,30 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     
     // MARK: - Page View Controller Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        println("BeforeViewController::index: \(index)")
+        
         if (self.index == 0 || self.index == NSNotFound) {
+            println("Return Nil")
             return nil
         }
         self.index--
-        print("\(self.index)\n")
+        println("Now index: \(self.index)")
         return self.viewControllerAtIndex(self.index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        println("AfterViewController::index: \(index)")
         if (self.index == NSNotFound) {
             return nil
         }
         self.index++
         if (self.index == 4) {
+            self.index--
+            println("Index == 4, return nil");
             return nil
         }
-        print("\(self.index)\n")
+
+        println("Now index:\(self.index)")
         return self.viewControllerAtIndex(self.index)
     }
     
