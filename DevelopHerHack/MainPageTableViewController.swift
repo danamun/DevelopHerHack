@@ -11,6 +11,7 @@ import UIKit
 
 class MainPageTableViewController: PFQueryTableViewController {
     var currentUser = PFUser.currentUser()
+    var editable = false
     
     override init(style: UITableViewStyle, className: String?) {
         super.init(style: style, className: className)
@@ -43,33 +44,9 @@ class MainPageTableViewController: PFQueryTableViewController {
         return query
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
-
-        var completeButton:UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-            
-            //Send parse info on the Complete
-            
-            println("Click Complete!")
-            
-        };
-        completeButton.backgroundColor = LIGHTERORANGE
-        
-        var declineButton: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Decline") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-            
-            //Send parse info on the Decline
-            
-            println("Click Decline")
-            
-        };
-        declineButton.backgroundColor = DARKERBLUE
-        
-        
-        return [completeButton, declineButton];
-        
-    }
-    
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
+        //return self.editable
+        return false
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -82,12 +59,16 @@ class MainPageTableViewController: PFQueryTableViewController {
         
         if(cell == nil) {
             cell = NSBundle.mainBundle().loadNibNamed("MainPageTableViewCell", owner: self, options: nil)[0] as? MainPageTableViewCell
-            
         }
         
         if let pfObject = object {
             // Set Cell's items here
             cell?.username?.text = pfObject["username"] as? String
+            if (cell?.username?.text == self.currentUser?.username) {
+                self.editable = true
+            } else {
+                self.editable = false
+            }
             var t = String(stringInterpolationSegment: pfObject["money"]!)
             cell?.money.text = t
             

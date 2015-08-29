@@ -9,7 +9,6 @@
 import UIKit
 
 class TaskViewController: MainPageTableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +32,52 @@ class TaskViewController: MainPageTableViewController {
         return query.includeKey("towho").includeKey("fromwho")
     }
     
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
+        
+        var cell : MainPageTableViewCell = tableView.cellForRowAtIndexPath(indexPath) as! MainPageTableViewCell
+        
+        var completeButton:UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
+            //Send parse info on the Complete
+            var var1: Float = NSString(string: cell.money.text!).floatValue
+            var var2: Float = self.currentUser?["money"]! as! Float
+            self.currentUser?["money"] =  var1 + var2
+            self.currentUser?.saveInBackgroundWithBlock{
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                } else {
+                    // There was a problem, check error.description
+                }
+            }
+            
+            var query : PFQuery = PFQuery(className: self.parseClassName!)
+            query.getObjectWithId(cell.cellID)
+            var deleteCell: PFObject = query.getFirstObject()!
+            deleteCell.deleteInBackground()
+            println("Click Complete!")
+            
+        };
+        completeButton.backgroundColor = LIGHTERORANGE
+        
+        var declineButton: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Decline") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
+            //Send parse info on the Decline
+            var query : PFQuery = PFQuery(className: self.parseClassName!)
+            query.getObjectWithId(cell.cellID)
+            var deleteCell: PFObject = query.getFirstObject()!
+            deleteCell.deleteInBackground()
+            println("Click Decline")
+            
+        };
+        declineButton.backgroundColor = DARKERBLUE
+        return [completeButton, declineButton];
+        
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return self.editable
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
@@ -44,8 +89,13 @@ class TaskViewController: MainPageTableViewController {
         }
         
         if let pfObject = object {
-            // Set Cell's items here
+            cell?.cellID = pfObject.objectId
             cell?.username?.text = pfObject["towho"]!.username
+            if (cell?.username?.text == self.currentUser?.username) {
+                self.editable = true
+            } else {
+                self.editable = false
+            }
             var t = String(stringInterpolationSegment: pfObject["value"]!)
             cell?.money.text = t
             

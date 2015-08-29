@@ -14,6 +14,9 @@ class MainPageTableViewCell: PFTableViewCell {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var money: UILabel!
     
+    // string used to identify cell in the parse table
+    var cellID: String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
