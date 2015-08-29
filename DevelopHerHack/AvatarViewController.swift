@@ -22,9 +22,21 @@ class AvatarViewController: UIViewController {
 
         // Hardcoding the button avatar images for now.
         var a1 : UIImageView = UIImageView(image: UIImage(named: "avatarsDog"))
+        a1.frame.size.width = 50
+        a1.frame.size.height = 50
         avatar1.addSubview(a1)
-        self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0))
+        
+        var a2 : UIImageView = UIImageView(image: UIImage(named: "danaAvatar"))
+        a2.frame.size.width = 50
+        a2.frame.size.height = 50
+        avatar2.addSubview(a2)
+        
+        var a3 : UIImageView = UIImageView(image: UIImage(named: "betsyAvatar"))
+        a3.frame.size.width = 50
+        a3.frame.size.height = 50
+        avatar3.addSubview(a3)
+        
+
         
         self.view.backgroundColor = LIGHTERGRAY
     }
