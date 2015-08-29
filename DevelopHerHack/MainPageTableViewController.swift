@@ -144,7 +144,7 @@ class MainPageTableViewController: PFQueryTableViewController {
                 println("Error: \(error!) \(error!.userInfo!)")
             }
         }
-        return headerCell
+        return headerCell?.contentView
     }
     
     /*
