@@ -38,6 +38,7 @@
 		D02356331B91CA940016ED9B /* createIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356301B91CA940016ED9B /* createIcon.png */; };
 		D02356341B91CA940016ED9B /* historyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356311B91CA940016ED9B /* historyIcon.png */; };
 		D02356351B91CA940016ED9B /* homeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356321B91CA940016ED9B /* homeIcon.png */; };
+		D02356371B91D6400016ED9B /* avatarsPenguin.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356361B91D6400016ED9B /* avatarsPenguin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		D02356301B91CA940016ED9B /* createIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createIcon.png; sourceTree = "<group>"; };
 		D02356311B91CA940016ED9B /* historyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historyIcon.png; sourceTree = "<group>"; };
 		D02356321B91CA940016ED9B /* homeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon.png; sourceTree = "<group>"; };
+		D02356361B91D6400016ED9B /* avatarsPenguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarsPenguin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 		D023562F1B91CA750016ED9B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D02356361B91D6400016ED9B /* avatarsPenguin.png */,
 				D02356301B91CA940016ED9B /* createIcon.png */,
 				D02356311B91CA940016ED9B /* historyIcon.png */,
 				D02356321B91CA940016ED9B /* homeIcon.png */,
@@ -351,6 +354,7 @@
 				9CD660731B91C07E0051C485 /* AvatarViewController.xib in Resources */,
 				9CD660791B91C12D0051C485 /* MoneyViewController.xib in Resources */,
 				9CD660661B91A62F0051C485 /* CreateTaskViewController.xib in Resources */,
+				D02356371B91D6400016ED9B /* avatarsPenguin.png in Resources */,
 				9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */,
 				D02356331B91CA940016ED9B /* createIcon.png in Resources */,
 				9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */,

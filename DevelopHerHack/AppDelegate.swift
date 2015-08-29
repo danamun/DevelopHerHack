@@ -31,9 +31,14 @@ func setupMainPageVC(window: UIWindow?) {
     let firstImage = UIImage(named: "createIcon")
     let secondImage = UIImage(named: "homeIcon")
     let thirdImage = UIImage(named: "historyIcon")
+    
     createTaskVC.tabBarItem = UITabBarItem(title: "Create", image: firstImage, tag: 1)
     taskVC.tabBarItem = UITabBarItem(title: "Home", image: secondImage, tag: 2)
     mainVC.tabBarItem = UITabBarItem(title: "History", image: thirdImage, tag: 3)
+    
+    
+    
+    
     
     
     let frame = UIScreen.mainScreen().bounds
@@ -49,6 +54,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.setApplicationId("9rV8VrNcQmtUw04ejgN11cbWB3zwiP572BRCrX4w", clientKey: "8pGkwcZ6hCNgBPDxqDBJsapKo35BFwqQPU55rEAe")
         
+        customizeUI()
+        
         // Loading login or main page VC.
         if (PFUser.currentUser() != nil) {
             let frame = UIScreen.mainScreen().bounds
@@ -63,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window!.makeKeyAndVisible()
         }
 
-        customizeUI()
+
         return true
     }
     
@@ -90,13 +97,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Tab
         
-        //        //Regular buttons background R:63 G:195 B:168
-        //        UIButton.appearance().tintColor = UIColor.whiteColor()
-        //        UIButton.appearance().backgroundColor = UIColor(red: 63/255, green: 195/255, blue: 168/255, alpha: 1)
-        //
-        //        UISegmentedControl.appearance().tintColor = UIColor(red: 63/255, green: 195/255, blue: 168/255, alpha: 1)
-        //        //Which background with some transparency
-        //        UISegmentedControl.appearance().backgroundColor = UIColor(red: 255/255, green:255/255, blue:255/255, alpha: 0.85)
+        //UI
+        UITabBar.appearance().tintColor = LIGHTERBLUE;
+        UITabBar.appearance().backgroundColor = DARKESTGRAY
+        UITabBar.appearance().barTintColor = DARKESTGRAY
         
     }
 

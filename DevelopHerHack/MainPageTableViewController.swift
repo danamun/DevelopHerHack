@@ -63,6 +63,10 @@ class MainPageTableViewController: PFQueryTableViewController {
         return 1
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 137
+    }
+    
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
@@ -74,7 +78,6 @@ class MainPageTableViewController: PFQueryTableViewController {
             headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderCell", owner: self, options: nil)[0] as? CustomHeaderCell
         }
         
-        headerCell?.backgroundColor = UIColor.redColor()
         headerCell!.username.text = self.currentUser?.username
         
         var query = PFUser.query()!
