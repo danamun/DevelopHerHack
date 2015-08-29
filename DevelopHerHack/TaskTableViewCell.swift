@@ -8,11 +8,16 @@
 
 import UIKit
 
-class TaskTableViewCell: UITableViewCell {
+class TaskTableViewCell: PFTableViewCell {
 
     @IBOutlet weak var taskTitle: UILabel!
     @IBOutlet weak var whom: UILabel!
     @IBOutlet weak var money: UILabel!
+    @IBOutlet weak var taskDescription: UILabel!
+    
+    // string used to identify cell in the parse table
+    var cellID: String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

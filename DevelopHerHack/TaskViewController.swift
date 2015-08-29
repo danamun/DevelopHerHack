@@ -34,7 +34,7 @@ class TaskViewController: MainPageTableViewController {
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
         
-        var cell : MainPageTableViewCell = tableView.cellForRowAtIndexPath(indexPath) as! MainPageTableViewCell
+        var cell : TaskTableViewCell = tableView.cellForRowAtIndexPath(indexPath) as! TaskTableViewCell
         
         var completeButton:UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
             
@@ -82,32 +82,37 @@ class TaskViewController: MainPageTableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
         
-        var cell:MainPageTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? MainPageTableViewCell
+        var cell:TaskTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? TaskTableViewCell
         
         if(cell == nil) {
-            cell = NSBundle.mainBundle().loadNibNamed("MainPageTableViewCell", owner: self, options: nil)[0] as? MainPageTableViewCell
+            cell = NSBundle.mainBundle().loadNibNamed("TaskTableViewCell", owner: self, options: nil)[0] as? TaskTableViewCell
         }
         
         if let pfObject = object {
             cell?.cellID = pfObject.objectId
-            cell?.username?.text = pfObject["towho"]!.username
-            if (cell?.username?.text == self.currentUser?.username) {
+            
+            // Set Cell's items here
+            cell?.whom.text = pfObject["towho"]!.username!
+            if (cell?.whom.text == self.currentUser?.username) {
                 self.editable = true
             } else {
                 self.editable = false
             }
+
             var t = String(stringInterpolationSegment: pfObject["value"]!)
             cell?.money.text = t
             
-            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
-            finalImage!.getDataInBackgroundWithBlock {
-                (imageData: NSData?, error: NSError?) -> Void in
-                if error == nil {
-                    if let imageData = imageData {
-                        cell?.avatar?.image = UIImage(data:imageData)
-                    }
-                }
-            }
+            cell?.taskTitle.text = pfObject["title"]! as! String
+            cell?.taskDescription.text = pfObject["description"]! as! String
+//            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
+//            finalImage!.getDataInBackgroundWithBlock {
+//                (imageData: NSData?, error: NSError?) -> Void in
+//                if error == nil {
+//                    if let imageData = imageData {
+//                        cell?.avatar?.image = UIImage(data:imageData)
+//                    }
+//                }
+//            }
         }
         
         return cell
