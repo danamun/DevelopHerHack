@@ -40,7 +40,8 @@ class LoginViewController: UIViewController {
         signInButton.layer.borderWidth = BUTTONBORDER
         signInButton.layer.borderColor = DARKERBLUE.CGColor
         signUpButton.layer.borderWidth = BUTTONBORDER
-        signUpButton.layer.borderColor = DARKERBLUE.CGColor
+        signUpButton.layer.borderColor = DARKERORANGE.CGColor
+        signUpButton.tintColor = DARKERORANGE
         
         buttonContainer.backgroundColor = LIGHTERGRAY
         self.view.backgroundColor = LIGHTERGRAY

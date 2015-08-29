@@ -20,7 +20,8 @@ class PickTypeViewController: UIViewController {
         parentButton.layer.borderWidth = BUTTONBORDER
         parentButton.layer.borderColor = DARKERBLUE.CGColor
         childButton.layer.borderWidth = BUTTONBORDER
-        childButton.layer.borderColor = DARKERBLUE.CGColor
+        childButton.layer.borderColor = DARKERORANGE.CGColor
+        childButton.tintColor = DARKERORANGE
         
         self.view.backgroundColor = LIGHTERGRAY
         buttonContainer.backgroundColor = LIGHTERGRAY
