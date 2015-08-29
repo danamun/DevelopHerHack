@@ -24,7 +24,6 @@
 		9CD660651B91A62F0051C485 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660631B91A62F0051C485 /* CreateTaskViewController.swift */; };
 		9CD660661B91A62F0051C485 /* CreateTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660641B91A62F0051C485 /* CreateTaskViewController.xib */; };
 		9CD660691B91A6D30051C485 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660671B91A6D30051C485 /* TaskViewController.swift */; };
-		9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660681B91A6D30051C485 /* TaskViewController.xib */; };
 		9CD6606E1B91ABCB0051C485 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6606C1B91ABCB0051C485 /* CustomHeaderCell.swift */; };
 		9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6606D1B91ABCB0051C485 /* CustomHeaderCell.xib */; };
 		9CD660721B91C07E0051C485 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660701B91C07E0051C485 /* AvatarViewController.swift */; };
@@ -77,7 +76,6 @@
 		9CD660631B91A62F0051C485 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		9CD660641B91A62F0051C485 /* CreateTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateTaskViewController.xib; sourceTree = "<group>"; };
 		9CD660671B91A6D30051C485 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		9CD660681B91A6D30051C485 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
 		9CD6606C1B91ABCB0051C485 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
 		9CD6606D1B91ABCB0051C485 /* CustomHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderCell.xib; sourceTree = "<group>"; };
 		9CD660701B91C07E0051C485 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				9CD660671B91A6D30051C485 /* TaskViewController.swift */,
-				9CD660681B91A6D30051C485 /* TaskViewController.xib */,
 			);
 			name = Task;
 			sourceTree = "<group>";
@@ -355,7 +352,6 @@
 				D02356341B91CA940016ED9B /* historyIcon.png in Resources */,
 				D02356351B91CA940016ED9B /* homeIcon.png in Resources */,
 				9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */,
-				9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
 				9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */,
 				9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */,

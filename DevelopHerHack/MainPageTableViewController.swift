@@ -54,6 +54,18 @@ class MainPageTableViewController: PFQueryTableViewController {
         if let pfObject = object {
             // Set Cell's items here
             cell?.username?.text = pfObject["username"] as? String
+            var t = String(stringInterpolationSegment: pfObject["money"]!)
+            cell?.money.text = t
+            
+            let finalImage = pfObject["avatar"] as? PFFile
+            finalImage!.getDataInBackgroundWithBlock {
+                (imageData: NSData?, error: NSError?) -> Void in
+                if error == nil {
+                    if let imageData = imageData {
+                        cell?.avatar?.image = UIImage(data:imageData)
+                    }
+                }
+            }
         }
         
         return cell

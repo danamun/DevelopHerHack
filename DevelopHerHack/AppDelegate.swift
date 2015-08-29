@@ -19,26 +19,23 @@ let LIGHTERORANGE: UIColor = UIColor(red:251/255, green:175/255, blue:93/255, al
 let BUTTONBORDER: CGFloat = 1
 
 func setupMainPageVC(window: UIWindow?) {
-    var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
+    
     
     // Creating the tab bar.
     let tabBarController = UITabBarController()
+    var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
     let createTaskVC = CreateTaskViewController(nibName: "CreateTaskViewController", bundle: nil)
-    let taskVC = TaskViewController(nibName: "TaskViewController", bundle: nil)
+    let taskVC: TaskViewController = TaskViewController(className: "FamilyTasks")
     let controllers = [mainVC,createTaskVC,taskVC]
     tabBarController.viewControllers = controllers
     
     let firstImage = UIImage(named: "createIcon")
-    let secondImage = UIImage(named: "homeIcon")
-    let thirdImage = UIImage(named: "historyIcon")
+    let secondImage = UIImage(named: "historyIcon")
+    let thirdImage = UIImage(named: "homeIcon")
     
+    mainVC.tabBarItem = UITabBarItem(title: "Home", image: thirdImage, tag: 3)
     createTaskVC.tabBarItem = UITabBarItem(title: "Create", image: firstImage, tag: 1)
-    taskVC.tabBarItem = UITabBarItem(title: "Home", image: secondImage, tag: 2)
-    mainVC.tabBarItem = UITabBarItem(title: "History", image: thirdImage, tag: 3)
-    
-    
-    
-    
+    taskVC.tabBarItem = UITabBarItem(title: "Ongoing", image: secondImage, tag: 2)
     
     
     let frame = UIScreen.mainScreen().bounds
