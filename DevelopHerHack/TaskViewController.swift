@@ -30,7 +30,7 @@ class TaskViewController: MainPageTableViewController {
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
         }
         query.orderByAscending("completed")
-        return query
+        return query.includeKey("towho").includeKey("fromwho")
     }
     
     
@@ -45,15 +45,11 @@ class TaskViewController: MainPageTableViewController {
         
         if let pfObject = object {
             // Set Cell's items here
-            //let query = PFUser.query()?.whereKey("username", equalTo: taskAvatar!)
-            //var otheruser : PFUser = query?.getFirstObject() as! PFUser
-            
-            var user : PFUser = pfObject["towho"] as! PFUser
-            cell?.username?.text = user.username
-            var t = String(stringInterpolationSegment: pfObject["value"]!)
+            cell?.username?.text = pfObject["towho"]!.username
+            var t = String(stringInterpolationSegment: pfObject["towho"]!.valueForKey("value"))
             cell?.money.text = t
             
-            let finalImage = pfObject["avatar"] as? PFFile
+            let finalImage = pfObject["towho"] as? PFFile
             /*finalImage!.getDataInBackgroundWithBlock {
                 (imageData: NSData?, error: NSError?) -> Void in
                 if error == nil {

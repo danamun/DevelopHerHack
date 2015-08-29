@@ -109,7 +109,7 @@ class MainPageTableViewController: PFQueryTableViewController {
                 if let objects = objects as? [PFObject] {
                     for object in objects {
                         var temp: Int = (object.valueForKey("money") as? Int)!
-                        headerCell!.money.text = "$\(temp)"
+                        headerCell!.money.text = "\(temp)"
                     }
                 }
             } else {
