@@ -18,6 +18,7 @@ let DARKERORANGE: UIColor = UIColor(red:255/255, green:152/255, blue:40/255, alp
 let LIGHTERORANGE: UIColor = UIColor(red:251/255, green:175/255, blue:93/255, alpha:1)
 let BUTTONBORDER: CGFloat = 1
 
+var colorArray  = NSArray(objects: LIGHTERORANGE, DARKERBLUE, DARKESTGRAY)
 func setupMainPageVC(window: UIWindow?) {
     
     
