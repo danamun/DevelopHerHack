@@ -124,10 +124,7 @@ class MainPageTableViewController: PFQueryTableViewController {
         if(headerCell == nil) {
             headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderCell", owner: self, options: nil)[0] as? CustomHeaderCell
         }
-        
-        //headerCell!.frame = CGRectMake(0, 15, self.view.frame.width, 100)
         headerCell!.username.text = self.currentUser?.username
-
         
         var query = PFUser.query()!
         query.whereKey("username", equalTo: self.currentUser!.username!)

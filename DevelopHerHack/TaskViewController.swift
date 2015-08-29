@@ -46,18 +46,18 @@ class TaskViewController: MainPageTableViewController {
         if let pfObject = object {
             // Set Cell's items here
             cell?.username?.text = pfObject["towho"]!.username
-            var t = String(stringInterpolationSegment: pfObject["towho"]!.valueForKey("value"))
+            var t = String(stringInterpolationSegment: pfObject["value"]!)
             cell?.money.text = t
             
-            let finalImage = pfObject["towho"] as? PFFile
-            /*finalImage!.getDataInBackgroundWithBlock {
+            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
+            finalImage!.getDataInBackgroundWithBlock {
                 (imageData: NSData?, error: NSError?) -> Void in
                 if error == nil {
                     if let imageData = imageData {
                         cell?.avatar?.image = UIImage(data:imageData)
                     }
                 }
-            }*/
+            }
         }
         
         return cell

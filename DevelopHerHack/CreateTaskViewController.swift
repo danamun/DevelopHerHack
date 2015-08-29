@@ -28,7 +28,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         pageController.currentPageIndicatorTintColor = UIColor.blackColor()
         pageController.backgroundColor = UIColor.whiteColor()
         
-        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.PageCurl, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
         self.pageVC.dataSource = self
         
         var avatarVC = self.viewControllerAtIndex(0) as! AvatarViewController
@@ -65,13 +65,10 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         
         switch(index) {
         case 0:
-            println("Return Avatar")
             return avatarVC
         case 1:
-            println("Return Description")
             return descriptionVC
         case 2:
-            println("Return Money")
             return moneyVC
         default:
             return nil
