@@ -14,6 +14,8 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var summaryTitle: UILabel!
     @IBOutlet weak var summaryDescription: UILabel!
     @IBOutlet weak var summaryMoney: UILabel!
+    @IBOutlet weak var finishButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,17 @@ class SummaryViewController: UIViewController {
         summaryTitle.text = taskTitle as? String
         summaryDescription.text = taskDescription as? String
         summaryMoney.text = NSString(format: "%f", taskMoney!) as String
+        
+        //UI
+        self.view.backgroundColor = LIGHTERGRAY
+        finishButton.layer.borderWidth = BUTTONBORDER
+        finishButton.layer.borderColor = DARKERBLUE.CGColor
+        
+    }
+
+    @IBAction func onFinish(sender: UIButton) {
+        self.dismissViewControllerAnimated(false, completion: nil);
+        
     }
 
     override func didReceiveMemoryWarning() {
