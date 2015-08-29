@@ -9,9 +9,15 @@
 import UIKit
 
 class PickTypeViewController: UIViewController {
+    @IBOutlet weak var parentButton: UIButton!
+    @IBOutlet weak var childButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        parentButton.layer.borderWidth = BUTTONBORDER
+        parentButton.layer.borderColor = DARKERBLUE.CGColor
+        childButton.layer.borderWidth = BUTTONBORDER
+        childButton.layer.borderColor = DARKERBLUE.CGColor
     }
     
     override func didReceiveMemoryWarning() {

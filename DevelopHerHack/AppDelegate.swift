@@ -43,13 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window!.rootViewController = navigationVC
             window!.makeKeyAndVisible()
             
-        }else{
+        }//else{
             var pickVC: PickTypeViewController = PickTypeViewController(nibName: "PickTypeViewController", bundle: nil)
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
             window!.rootViewController = pickVC
             window!.makeKeyAndVisible()
-        }
+        //}
 
         customizeUI()
         return true
