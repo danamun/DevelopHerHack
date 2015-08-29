@@ -42,6 +42,10 @@ class MainPageTableViewController: PFQueryTableViewController {
         return query
     }
     
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
         

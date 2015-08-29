@@ -22,14 +22,21 @@
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="teL-DN-Ngf"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbR-6B-9ly">
-                        <rect key="frame" x="244" y="38" width="63" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-FH-2Tz">
+                        <rect key="frame" x="123" y="38" width="87" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-FH-2Tz">
-                        <rect key="frame" x="123" y="38" width="104" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie.png" translatesAutoresizingMaskIntoConstraints="NO" id="tEY-gh-j4V">
+                        <rect key="frame" x="215" y="34" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5xu-7k-MCM"/>
+                            <constraint firstAttribute="width" constant="30" id="uPy-TW-uAp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbR-6B-9ly">
+                        <rect key="frame" x="244" y="38" width="63" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -42,15 +49,20 @@
                     <constraint firstItem="YJB-FH-2Tz" firstAttribute="centerY" secondItem="rbR-6B-9ly" secondAttribute="centerY" id="GTZ-T8-eRS"/>
                     <constraint firstAttribute="trailingMargin" secondItem="rbR-6B-9ly" secondAttribute="trailing" constant="5" id="QDi-dD-B8h"/>
                     <constraint firstAttribute="bottomMargin" secondItem="wLO-kf-2jO" secondAttribute="bottom" constant="-1.5" id="bd1-53-c6I"/>
+                    <constraint firstItem="rbR-6B-9ly" firstAttribute="leading" secondItem="tEY-gh-j4V" secondAttribute="trailing" constant="10" id="ijM-To-ABo"/>
+                    <constraint firstItem="tEY-gh-j4V" firstAttribute="centerY" secondItem="rbR-6B-9ly" secondAttribute="centerY" constant="0.5" id="wFx-PH-eZZ"/>
                     <constraint firstItem="YJB-FH-2Tz" firstAttribute="leading" secondItem="wLO-kf-2jO" secondAttribute="trailing" constant="15" id="wZY-7q-Beg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatar" destination="wLO-kf-2jO" id="WAA-SN-ttH"/>
-                <outlet property="money" destination="rbR-6B-9ly" id="XYN-fw-WVr"/>
+                <outlet property="money" destination="rbR-6B-9ly" id="iFL-XK-P0d"/>
                 <outlet property="username" destination="YJB-FH-2Tz" id="xi9-P1-JSK"/>
             </connections>
             <point key="canvasLocation" x="284" y="292.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="cookie.png" width="30" height="30"/>
+    </resources>
 </document>

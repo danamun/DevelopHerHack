@@ -18,115 +18,91 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose Avatar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13j-gY-8YP">
-                    <rect key="frame" x="244" y="226" width="113" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Avatar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13j-gY-8YP">
+                    <rect key="frame" x="244" y="213" width="113" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJx-al-st9">
-                    <rect key="frame" x="136" y="340" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJx-al-st9">
+                    <rect key="frame" x="50" y="275" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="HyC-Co-Nu2"/>
-                        <constraint firstAttribute="height" constant="50" id="rkN-OV-sfy"/>
+                        <constraint firstAttribute="width" constant="100" id="3dK-aT-LUq"/>
+                        <constraint firstAttribute="height" constant="100" id="yhW-4Z-D99"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" image="avatarsDog.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="avatarsDog-select.png"/>
                     <connections>
                         <action selector="clickedAvatar1:" destination="-1" eventType="touchUpInside" id="MQh-ea-QgL"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efp-FF-AsE">
-                    <rect key="frame" x="231" y="340" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efp-FF-AsE">
+                    <rect key="frame" x="450" y="275" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="5UH-Jr-9qO"/>
-                        <constraint firstAttribute="width" constant="50" id="x9D-kk-WjR"/>
+                        <constraint firstAttribute="height" constant="100" id="0iE-Xt-NxA"/>
+                        <constraint firstAttribute="width" constant="100" id="3W6-St-GiV"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" image="danaAvatar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="danaAvatar-select.png"/>
                     <connections>
                         <action selector="clickedAvatar2:" destination="-1" eventType="touchUpInside" id="v10-gT-b5M"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYS-it-Xcf">
-                    <rect key="frame" x="419" y="340" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-rT-wAT">
-                    <rect key="frame" x="419" y="340" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-lI-3wa">
+                    <rect key="frame" x="50" y="403" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="0qH-vx-TOv"/>
-                        <constraint firstAttribute="width" constant="50" id="QTX-Cy-sUf"/>
+                        <constraint firstAttribute="width" constant="100" id="1jF-K3-BG5"/>
+                        <constraint firstAttribute="height" constant="100" id="ual-Eo-R5h"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" image="betsyAvatar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="clickedAvatar4:" destination="-1" eventType="touchUpInside" id="ldm-Ae-L9a"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-lI-3wa">
-                    <rect key="frame" x="323" y="340" width="46" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="HsO-7G-5b4"/>
-                        <constraint firstAttribute="width" constant="50" id="qDF-W2-5jV"/>
-                    </constraints>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <state key="selected" image="betsyAvatar-select.png"/>
                     <connections>
                         <action selector="clickedAvatar3:" destination="-1" eventType="touchUpInside" id="63C-E4-z3n"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-rT-wAT">
+                    <rect key="frame" x="450" y="403" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="18a-nb-60s"/>
+                        <constraint firstAttribute="width" constant="100" id="5po-Wh-JRw"/>
+                    </constraints>
+                    <state key="normal" image="avatarsPenguin.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="avatarsPenguin-select.png"/>
+                    <connections>
+                        <action selector="clickedAvatar4:" destination="-1" eventType="touchUpInside" id="ldm-Ae-L9a"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="efp-FF-AsE" firstAttribute="top" secondItem="13j-gY-8YP" secondAttribute="bottom" constant="50" id="1Ao-8d-wjd"/>
-                <constraint firstAttribute="centerY" secondItem="QJx-al-st9" secondAttribute="centerY" id="4cS-11-2Q1"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="top" secondItem="QJx-al-st9" secondAttribute="top" id="A30-yH-VEP"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="bottom" secondItem="QJx-al-st9" secondAttribute="bottom" id="ADV-uH-00s"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="leading" secondItem="efp-FF-AsE" secondAttribute="trailing" constant="20" id="Cpq-RL-Kbs"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="top" secondItem="HYS-it-Xcf" secondAttribute="top" id="E2O-ZE-vsd"/>
-                <constraint firstItem="QJx-al-st9" firstAttribute="top" secondItem="K5B-lI-3wa" secondAttribute="top" id="QhF-ta-gjO"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="top" secondItem="efp-FF-AsE" secondAttribute="top" id="XgG-FG-SkM"/>
-                <constraint firstAttribute="centerY" secondItem="QJx-al-st9" secondAttribute="centerY" id="ZkX-Gk-NEM"/>
-                <constraint firstItem="efp-FF-AsE" firstAttribute="leading" secondItem="QJx-al-st9" secondAttribute="trailing" constant="20" id="ahr-cV-2Dj"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="bottom" secondItem="efp-FF-AsE" secondAttribute="bottom" id="c4B-fK-yAc"/>
-                <constraint firstAttribute="centerX" secondItem="13j-gY-8YP" secondAttribute="centerX" id="d72-D1-LlD"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="baseline" secondItem="13j-gY-8YP" secondAttribute="baseline" constant="100" id="fdg-7v-0gd"/>
-                <constraint firstAttribute="trailing" secondItem="HYS-it-Xcf" secondAttribute="trailing" constant="100" id="lwr-JC-geO"/>
-                <constraint firstItem="K5B-lI-3wa" firstAttribute="bottom" secondItem="HYS-it-Xcf" secondAttribute="bottom" id="oBR-iB-H9f"/>
-                <constraint firstAttribute="centerY" secondItem="efp-FF-AsE" secondAttribute="centerY" id="oqM-ql-WOz"/>
-                <constraint firstItem="QJx-al-st9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="rca-v1-uGr"/>
-                <constraint firstItem="QJx-al-st9" firstAttribute="top" secondItem="efp-FF-AsE" secondAttribute="top" id="tuh-eS-A0g"/>
-                <constraint firstAttribute="trailing" secondItem="ft4-rT-wAT" secondAttribute="trailing" constant="15" id="ubc-tX-9PP"/>
-                <constraint firstAttribute="centerY" secondItem="K5B-lI-3wa" secondAttribute="centerY" id="vfw-5Y-nvu"/>
+                <constraint firstItem="QJx-al-st9" firstAttribute="top" secondItem="13j-gY-8YP" secondAttribute="bottom" constant="41.5" id="3eh-AP-kX5"/>
+                <constraint firstItem="efp-FF-AsE" firstAttribute="leading" secondItem="ft4-rT-wAT" secondAttribute="leading" id="Gzu-BT-duN"/>
+                <constraint firstAttribute="centerX" secondItem="13j-gY-8YP" secondAttribute="centerX" id="WJr-5H-dYZ"/>
+                <constraint firstItem="QJx-al-st9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Xdw-Gp-MY8"/>
+                <constraint firstItem="efp-FF-AsE" firstAttribute="centerY" secondItem="QJx-al-st9" secondAttribute="centerY" id="ZJS-la-7HD"/>
+                <constraint firstAttribute="centerY" secondItem="13j-gY-8YP" secondAttribute="centerY" constant="76.75" id="dAN-4o-kw5"/>
+                <constraint firstItem="QJx-al-st9" firstAttribute="leading" secondItem="K5B-lI-3wa" secondAttribute="leading" id="dnx-Zu-v0d"/>
+                <constraint firstItem="ft4-rT-wAT" firstAttribute="top" secondItem="efp-FF-AsE" secondAttribute="bottom" constant="28" id="gGG-a2-VwH"/>
+                <constraint firstAttribute="trailing" secondItem="efp-FF-AsE" secondAttribute="trailing" constant="50" id="v9q-jH-Dw7"/>
+                <constraint firstItem="K5B-lI-3wa" firstAttribute="top" secondItem="QJx-al-st9" secondAttribute="bottom" constant="28" id="xxO-3m-rF6"/>
             </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="4cS-11-2Q1"/>
-                    <exclude reference="QhF-ta-gjO"/>
-                    <exclude reference="ZkX-Gk-NEM"/>
-                    <exclude reference="rca-v1-uGr"/>
-                    <exclude reference="tuh-eS-A0g"/>
-                    <exclude reference="1Ao-8d-wjd"/>
-                    <exclude reference="ahr-cV-2Dj"/>
-                    <exclude reference="oqM-ql-WOz"/>
-                    <exclude reference="A30-yH-VEP"/>
-                    <exclude reference="ADV-uH-00s"/>
-                    <exclude reference="Cpq-RL-Kbs"/>
-                    <exclude reference="E2O-ZE-vsd"/>
-                    <exclude reference="XgG-FG-SkM"/>
-                    <exclude reference="c4B-fK-yAc"/>
-                    <exclude reference="fdg-7v-0gd"/>
-                    <exclude reference="oBR-iB-H9f"/>
-                    <exclude reference="vfw-5Y-nvu"/>
-                    <exclude reference="ubc-tX-9PP"/>
-                </mask>
-            </variation>
         </view>
     </objects>
+    <resources>
+        <image name="avatarsDog-select.png" width="100" height="100"/>
+        <image name="avatarsDog.png" width="100" height="100"/>
+        <image name="avatarsPenguin-select.png" width="100" height="100"/>
+        <image name="avatarsPenguin.png" width="100" height="100"/>
+        <image name="betsyAvatar-select.png" width="100" height="100"/>
+        <image name="betsyAvatar.png" width="100" height="100"/>
+        <image name="danaAvatar-select.png" width="100" height="100"/>
+        <image name="danaAvatar.png" width="100" height="100"/>
+    </resources>
 </document>

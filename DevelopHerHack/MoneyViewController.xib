@@ -42,13 +42,21 @@
                         <action selector="moneyValue:" destination="-1" eventType="editingDidEnd" id="AlF-cI-Z9O"/>
                     </connections>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie.png" translatesAutoresizingMaskIntoConstraints="NO" id="XUh-fY-TTq">
+                    <rect key="frame" x="187" y="220" width="30" height="30"/>
+                </imageView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="oar-SA-V0z" secondAttribute="centerX" id="5dc-ea-bvP"/>
                 <constraint firstAttribute="centerY" secondItem="oar-SA-V0z" secondAttribute="centerY" constant="65" id="E1v-Jk-nSb"/>
                 <constraint firstItem="Shb-z8-vbh" firstAttribute="top" secondItem="oar-SA-V0z" secondAttribute="bottom" constant="30" id="Jzb-Sw-wBP"/>
+                <constraint firstItem="XUh-fY-TTq" firstAttribute="centerY" secondItem="oar-SA-V0z" secondAttribute="centerY" id="bRD-QL-byd"/>
+                <constraint firstItem="oar-SA-V0z" firstAttribute="leading" secondItem="XUh-fY-TTq" secondAttribute="trailing" constant="8" id="f5x-do-ZnO"/>
                 <constraint firstAttribute="centerX" secondItem="Shb-z8-vbh" secondAttribute="centerX" id="gjA-GT-GiO"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="cookie.png" width="30" height="30"/>
+    </resources>
 </document>
