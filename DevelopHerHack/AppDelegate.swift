@@ -55,18 +55,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         customizeUI()
         
         // Loading login or main page VC.
-        if (PFUser.currentUser() != nil) {
+        /*if (PFUser.currentUser() != nil) {
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
             setupMainPageVC(window)
             
-        }else{
+        }else{*/
             var pickVC: PickTypeViewController = PickTypeViewController(nibName: "PickTypeViewController", bundle: nil)
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
             window!.rootViewController = pickVC
             window!.makeKeyAndVisible()
-        }
+        //}
 
 
         return true
