@@ -25,8 +25,6 @@ class MainPageTableViewController: PFQueryTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +59,45 @@ class MainPageTableViewController: PFQueryTableViewController {
         }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        var headerCell:CustomHeaderCell? = tableView.dequeueReusableHeaderFooterViewWithIdentifier("CustomHeaderCell") as? CustomHeaderCell
+        
+        if(headerCell == nil) {
+            headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderCell", owner: self, options: nil)[0] as? CustomHeaderCell
+        }
+        
+        headerCell?.backgroundColor = UIColor.redColor()
+        headerCell!.username.text = self.currentUser?.username
+        
+        var query = PFUser.query()!
+        query.whereKey("username", equalTo: self.currentUser!.username!)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // Do something with the found objects
+                if let objects = objects as? [PFObject] {
+                    for object in objects {
+                        var temp: Int = (object.valueForKey("money") as? Int)!
+                        headerCell!.money.text = "$\(temp)"
+                    }
+                }
+            } else {
+                // Log details of the failure
+                println("Error: \(error!) \(error!.userInfo!)")
+            }
+        }
+        return headerCell
     }
     
     

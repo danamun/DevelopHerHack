@@ -20,17 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if (PFUser.currentUser() != nil) {
             var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
-            UINavigationBar.appearance().barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-            //var font = UIFont(name: "Little days", size: 20)
             
-            var navigationVC:UINavigationController = UINavigationController(rootViewController: mainVC)
-            //navigationVC.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: font!]
-            //navigationVC.navigationBar.topItem?.title = "little days"
-            navigationVC.navigationBar.translucent = false
+            // Creating the tab bar.
+            let tabBarController = UITabBarController()
+            let createTaskVC = CreateTaskViewController(nibName: "CreateTaskViewController", bundle: nil)
+            let taskVC = TaskViewController(nibName: "TaskViewController", bundle: nil)
+            let controllers = [mainVC,createTaskVC,taskVC]
+            tabBarController.viewControllers = controllers
+            
+            let firstImage = UIImage(named: "example1")
+            let secondImage = UIImage(named: "example2")
+            let thirdImage = UIImage(named: "example3")
+            createTaskVC.tabBarItem = UITabBarItem(title: "Create Task", image: firstImage, tag: 1)
+            taskVC.tabBarItem = UITabBarItem(title: "Home", image: secondImage, tag: 2)
+            mainVC.tabBarItem = UITabBarItem(title: "History", image: thirdImage, tag: 3)
             
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
-            window!.rootViewController = navigationVC
+            window!.rootViewController = tabBarController
             window!.makeKeyAndVisible()
             
         } else{
