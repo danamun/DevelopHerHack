@@ -18,6 +18,8 @@
 		9CD660521B91730E0051C485 /* MainPageTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660501B91730E0051C485 /* MainPageTableViewController.xib */; };
 		9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660531B91735B0051C485 /* LoginViewController.swift */; };
 		9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660541B91735B0051C485 /* LoginViewController.xib */; };
+		9CD660591B91773E0051C485 /* PickTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660571B91773E0051C485 /* PickTypeViewController.swift */; };
+		9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660581B91773E0051C485 /* PickTypeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9CD660501B91730E0051C485 /* MainPageTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewController.xib; sourceTree = "<group>"; };
 		9CD660531B91735B0051C485 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9CD660541B91735B0051C485 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9CD660571B91773E0051C485 /* PickTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTypeViewController.swift; sourceTree = "<group>"; };
+		9CD660581B91773E0051C485 /* PickTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickTypeViewController.xib; sourceTree = "<group>"; };
 		BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC3D01EEA4689AEBD9035E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 			children = (
 				9CD660531B91735B0051C485 /* LoginViewController.swift */,
 				9CD660541B91735B0051C485 /* LoginViewController.xib */,
+				9CD660571B91773E0051C485 /* PickTypeViewController.swift */,
+				9CD660581B91773E0051C485 /* PickTypeViewController.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
 				9CD660521B91730E0051C485 /* MainPageTableViewController.xib in Resources */,
+				9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */,
 				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
 				9CD660301B9170B50051C485 /* Images.xcassets in Resources */,
 			);
@@ -322,6 +329,7 @@
 				9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */,
 				9CD660511B91730E0051C485 /* MainPageTableViewController.swift in Sources */,
 				9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */,
+				9CD660591B91773E0051C485 /* PickTypeViewController.swift in Sources */,
 				9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var message: UILabel!
-
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    var type : String?
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "LoginViewController", bundle: nil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,25 +92,6 @@ class LoginViewController: UIViewController {
     }
     */
     
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: "LoginViewController", bundle: nil)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
     func setMainViewController() {
         var mainVC: MainPageTableViewController = MainPageTableViewController(className: "Items")
         UINavigationBar.appearance().tintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
@@ -131,6 +120,7 @@ class LoginViewController: UIViewController {
         var user = PFUser()
         user.username = userName
         user.password = userPassword
+        user["usertype"] = self.type
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in

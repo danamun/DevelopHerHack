@@ -34,10 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window!.makeKeyAndVisible()
             
         } else{*/
-            var logInVC: LoginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            var pickVC: PickTypeViewController = PickTypeViewController(nibName: "PickTypeViewController", bundle: nil)
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
-            window!.rootViewController = logInVC
+            window!.rootViewController = pickVC
             window!.makeKeyAndVisible()
         //}
 
