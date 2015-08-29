@@ -36,7 +36,6 @@ class MoneyViewController: UIViewController {
     @IBAction func clickCreate(sender: AnyObject) {
         taskMoney = (moneyLabel.text as NSString).floatValue
         let query = PFUser.query()?.whereKey("username", equalTo: taskAvatar!)
-        print("task avatar: \(taskAvatar)!")
         var otheruser : PFUser = query?.getFirstObject() as! PFUser
         
         var task = PFObject(className:"FamilyTasks")

@@ -44,7 +44,6 @@ class DescriptionViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - UITextViewDelegate
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
-        print("went here")
         if(textView.text == self.placeholderText) {
             self.descriptionTextView.text = ""
         }
