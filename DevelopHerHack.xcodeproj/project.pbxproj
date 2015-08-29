@@ -48,6 +48,7 @@
 		D02356461B9208880016ED9B /* betsyAvatar-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356421B9208880016ED9B /* betsyAvatar-select.png */; };
 		D02356471B9208880016ED9B /* danaAvatar-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356431B9208880016ED9B /* danaAvatar-select.png */; };
 		D02356481B9208880016ED9B /* avatarsPenguin-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356441B9208880016ED9B /* avatarsPenguin-select.png */; };
+		D023564A1B920F610016ED9B /* cookie.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356491B920F610016ED9B /* cookie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		D02356421B9208880016ED9B /* betsyAvatar-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "betsyAvatar-select.png"; sourceTree = "<group>"; };
 		D02356431B9208880016ED9B /* danaAvatar-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "danaAvatar-select.png"; sourceTree = "<group>"; };
 		D02356441B9208880016ED9B /* avatarsPenguin-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatarsPenguin-select.png"; sourceTree = "<group>"; };
+		D02356491B920F610016ED9B /* cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cookie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 		D023562F1B91CA750016ED9B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D02356491B920F610016ED9B /* cookie.png */,
 				D02356411B9208880016ED9B /* avatarsDog-select.png */,
 				D02356421B9208880016ED9B /* betsyAvatar-select.png */,
 				D02356431B9208880016ED9B /* danaAvatar-select.png */,
@@ -381,6 +384,7 @@
 				9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */,
 				9CD6605E1B917B1C0051C485 /* MainPageTableViewCell.xib in Resources */,
 				9CD660731B91C07E0051C485 /* AvatarViewController.xib in Resources */,
+				D023564A1B920F610016ED9B /* cookie.png in Resources */,
 				9CD660791B91C12D0051C485 /* MoneyViewController.xib in Resources */,
 				9CD660661B91A62F0051C485 /* CreateTaskViewController.xib in Resources */,
 				D02356371B91D6400016ED9B /* avatarsPenguin.png in Resources */,
