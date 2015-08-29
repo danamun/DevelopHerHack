@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MainPageTableViewController: PFQueryTableViewController {
     var currentUser = PFUser.currentUser()
     
@@ -42,9 +43,37 @@ class MainPageTableViewController: PFQueryTableViewController {
         return query
     }
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
+
+        var completeButton:UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
+            //Send parse info on the Complete
+            
+            println("Click Complete!")
+            
+        };
+        completeButton.backgroundColor = LIGHTERORANGE
+        
+        var declineButton: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
+            //Send parse info on the Decline
+            
+            println("Click Decline")
+            
+        };
+        declineButton.backgroundColor = DARKERBLUE
+        
+        
+        return [completeButton, declineButton];
+        
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
@@ -53,6 +82,7 @@ class MainPageTableViewController: PFQueryTableViewController {
         
         if(cell == nil) {
             cell = NSBundle.mainBundle().loadNibNamed("MainPageTableViewCell", owner: self, options: nil)[0] as? MainPageTableViewCell
+            
         }
         
         if let pfObject = object {

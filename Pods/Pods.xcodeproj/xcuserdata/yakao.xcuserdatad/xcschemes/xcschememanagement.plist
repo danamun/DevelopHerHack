@@ -4,45 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Bolts.xcscheme</key>
+		<key>Pods-Bolts.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Parse.xcscheme</key>
+		<key>Pods-Parse.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>ParseUI.xcscheme</key>
+		<key>Pods-ParseUI.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SESlideTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A2D10DB91044531592122667DA4A8D2</key>
+		<key>2D7F5F7D20D8DACAA7B441CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>881166FF080B202FB7A04A017DC06D0E</key>
+		<key>396BC7D50324A56B60B420EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A5E54941769F502C47E59574B295569</key>
+		<key>58A0FE5BB1E621D11642FC24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4191A80C8D85657BC24A5BD9172638D</key>
+		<key>6E77F37F686193B2390E886C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94DD6BDAA38C526608B69A41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
