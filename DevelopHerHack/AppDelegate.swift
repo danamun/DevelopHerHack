@@ -98,9 +98,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Tab
         
         //UI
-        UITabBar.appearance().tintColor = LIGHTERBLUE;
-        UITabBar.appearance().backgroundColor = DARKESTGRAY
-        UITabBar.appearance().barTintColor = DARKESTGRAY
+        UITabBar.appearance().tintColor = DARKERORANGE;
+        UITabBar.appearance().backgroundColor = UIColor.whiteColor()
+        UITabBar.appearance().barTintColor = UIColor.whiteColor()
         
     }
 
