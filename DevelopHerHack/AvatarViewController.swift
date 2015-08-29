@@ -26,6 +26,7 @@ class AvatarViewController: UIViewController {
         self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: a1, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.avatar1, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0))
         
+        self.view.backgroundColor = LIGHTERGRAY
     }
 
     override func didReceiveMemoryWarning() {

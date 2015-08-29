@@ -28,7 +28,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         pageController.currentPageIndicatorTintColor = UIColor.blackColor()
         pageController.backgroundColor = UIColor.whiteColor()
         
-        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.PageCurl, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
         self.pageVC.dataSource = self
         
         var avatarVC = self.viewControllerAtIndex(0) as! AvatarViewController
@@ -53,7 +53,8 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     // Pass the selected object to the new view controller.
     }
     */
-    
+
+
     func viewControllerAtIndex(index: Int) -> UIViewController? {
         if (index > 3) {
             return UIViewController()

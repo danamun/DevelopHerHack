@@ -13,13 +13,14 @@ class CustomHeaderCell: UITableViewCell {
     @IBOutlet weak var money: UILabel!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var formatSquare: UIView!
     
     @IBOutlet weak var formatView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         self.backgroundColor = UIColor.whiteColor()
-    
+        formatSquare.backgroundColor = LIGHTERGRAY
         
     }
 

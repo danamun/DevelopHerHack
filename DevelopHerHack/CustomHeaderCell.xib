@@ -57,6 +57,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatar" destination="WTl-nZ-fWe" id="PaS-4z-OL0"/>
+                <outlet property="formatSquare" destination="4dg-BD-b4V" id="fN2-DX-nzo"/>
                 <outlet property="money" destination="oFP-Ca-2Sa" id="lHx-Av-HYp"/>
                 <outlet property="username" destination="lWi-cf-40k" id="hsT-hn-0Vi"/>
             </connections>

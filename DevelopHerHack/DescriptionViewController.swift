@@ -19,6 +19,7 @@ class DescriptionViewController: UIViewController, UITextViewDelegate {
 
         // Do any additional setup after loading the view.
         descriptionTextView.delegate = self
+        self.view.backgroundColor = LIGHTERGRAY
     }
 
     override func didReceiveMemoryWarning() {
