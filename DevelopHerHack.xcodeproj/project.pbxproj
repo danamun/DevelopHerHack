@@ -27,6 +27,14 @@
 		9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660681B91A6D30051C485 /* TaskViewController.xib */; };
 		9CD6606E1B91ABCB0051C485 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6606C1B91ABCB0051C485 /* CustomHeaderCell.swift */; };
 		9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6606D1B91ABCB0051C485 /* CustomHeaderCell.xib */; };
+		9CD660721B91C07E0051C485 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660701B91C07E0051C485 /* AvatarViewController.swift */; };
+		9CD660731B91C07E0051C485 /* AvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660711B91C07E0051C485 /* AvatarViewController.xib */; };
+		9CD660781B91C12D0051C485 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660761B91C12D0051C485 /* MoneyViewController.swift */; };
+		9CD660791B91C12D0051C485 /* MoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660771B91C12D0051C485 /* MoneyViewController.xib */; };
+		9CD6607C1B91C13E0051C485 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6607A1B91C13E0051C485 /* DescriptionViewController.swift */; };
+		9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6607B1B91C13E0051C485 /* DescriptionViewController.xib */; };
+		9CD660801B91C14C0051C485 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6607E1B91C14C0051C485 /* SummaryViewController.swift */; };
+		9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6607F1B91C14C0051C485 /* SummaryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		9CD660681B91A6D30051C485 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
 		9CD6606C1B91ABCB0051C485 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
 		9CD6606D1B91ABCB0051C485 /* CustomHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderCell.xib; sourceTree = "<group>"; };
+		9CD660701B91C07E0051C485 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		9CD660711B91C07E0051C485 /* AvatarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarViewController.xib; sourceTree = "<group>"; };
+		9CD660761B91C12D0051C485 /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		9CD660771B91C12D0051C485 /* MoneyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyViewController.xib; sourceTree = "<group>"; };
+		9CD6607A1B91C13E0051C485 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		9CD6607B1B91C13E0051C485 /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionViewController.xib; sourceTree = "<group>"; };
+		9CD6607E1B91C14C0051C485 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		9CD6607F1B91C14C0051C485 /* SummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
 		BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC3D01EEA4689AEBD9035E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +194,14 @@
 			children = (
 				9CD660631B91A62F0051C485 /* CreateTaskViewController.swift */,
 				9CD660641B91A62F0051C485 /* CreateTaskViewController.xib */,
+				9CD660701B91C07E0051C485 /* AvatarViewController.swift */,
+				9CD660711B91C07E0051C485 /* AvatarViewController.xib */,
+				9CD6607A1B91C13E0051C485 /* DescriptionViewController.swift */,
+				9CD6607B1B91C13E0051C485 /* DescriptionViewController.xib */,
+				9CD660761B91C12D0051C485 /* MoneyViewController.swift */,
+				9CD660771B91C12D0051C485 /* MoneyViewController.xib */,
+				9CD6607E1B91C14C0051C485 /* SummaryViewController.swift */,
+				9CD6607F1B91C14C0051C485 /* SummaryViewController.xib */,
 			);
 			name = CreateTask;
 			sourceTree = "<group>";
@@ -302,10 +326,14 @@
 				9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */,
 				9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
+				9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */,
 				9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */,
 				9CD6605E1B917B1C0051C485 /* MainPageTableViewCell.xib in Resources */,
+				9CD660731B91C07E0051C485 /* AvatarViewController.xib in Resources */,
+				9CD660791B91C12D0051C485 /* MoneyViewController.xib in Resources */,
 				9CD660661B91A62F0051C485 /* CreateTaskViewController.xib in Resources */,
 				9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */,
+				9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */,
 				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
 				9CD660301B9170B50051C485 /* Images.xcassets in Resources */,
 			);
@@ -359,12 +387,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */,
+				9CD660801B91C14C0051C485 /* SummaryViewController.swift in Sources */,
 				9CD6606E1B91ABCB0051C485 /* CustomHeaderCell.swift in Sources */,
 				9CD660511B91730E0051C485 /* MainPageTableViewController.swift in Sources */,
+				9CD660781B91C12D0051C485 /* MoneyViewController.swift in Sources */,
 				9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */,
 				9CD660591B91773E0051C485 /* PickTypeViewController.swift in Sources */,
+				9CD660721B91C07E0051C485 /* AvatarViewController.swift in Sources */,
 				9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */,
 				9CD660691B91A6D30051C485 /* TaskViewController.swift in Sources */,
+				9CD6607C1B91C13E0051C485 /* DescriptionViewController.swift in Sources */,
 				9CD6605D1B917B1C0051C485 /* MainPageTableViewCell.swift in Sources */,
 				9CD660651B91A62F0051C485 /* CreateTaskViewController.swift in Sources */,
 			);

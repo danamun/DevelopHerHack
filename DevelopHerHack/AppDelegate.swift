@@ -18,54 +18,56 @@ let DARKERORANGE: UIColor = UIColor(red:255/255, green:152/255, blue:40/255, alp
 let LIGHTERORANGE: UIColor = UIColor(red:251/255, green:175/255, blue:93/255, alpha:1)
 let BUTTONBORDER: CGFloat = 1
 
+func setupMainPageVC(window: UIWindow?) {
+    var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
+    
+    // Creating the tab bar.
+    let tabBarController = UITabBarController()
+    let createTaskVC = CreateTaskViewController(nibName: "CreateTaskViewController", bundle: nil)
+    let taskVC = TaskViewController(nibName: "TaskViewController", bundle: nil)
+    let controllers = [mainVC,createTaskVC,taskVC]
+    tabBarController.viewControllers = controllers
+    
+    let firstImage = UIImage(named: "example1")
+    let secondImage = UIImage(named: "example2")
+    let thirdImage = UIImage(named: "example3")
+    createTaskVC.tabBarItem = UITabBarItem(title: "Create Task", image: firstImage, tag: 1)
+    taskVC.tabBarItem = UITabBarItem(title: "History", image: secondImage, tag: 2)
+    mainVC.tabBarItem = UITabBarItem(title: "Home", image: thirdImage, tag: 3)
+    
+    let frame = UIScreen.mainScreen().bounds
+    window!.rootViewController = tabBarController
+    window!.makeKeyAndVisible()
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
         Parse.setApplicationId("9rV8VrNcQmtUw04ejgN11cbWB3zwiP572BRCrX4w", clientKey: "8pGkwcZ6hCNgBPDxqDBJsapKo35BFwqQPU55rEAe")
-        // Override point for customization after application launch.
+        
+        // Loading login or main page VC.
         if (PFUser.currentUser() != nil) {
-            var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
-            
-            // Creating the tab bar.
-            let tabBarController = UITabBarController()
-            let createTaskVC = CreateTaskViewController(nibName: "CreateTaskViewController", bundle: nil)
-            let taskVC = TaskViewController(nibName: "TaskViewController", bundle: nil)
-            let controllers = [mainVC,createTaskVC,taskVC]
-            tabBarController.viewControllers = controllers
-            
-            let firstImage = UIImage(named: "example1")
-            let secondImage = UIImage(named: "example2")
-            let thirdImage = UIImage(named: "example3")
-            createTaskVC.tabBarItem = UITabBarItem(title: "Create Task", image: firstImage, tag: 1)
-            taskVC.tabBarItem = UITabBarItem(title: "Home", image: secondImage, tag: 2)
-            mainVC.tabBarItem = UITabBarItem(title: "History", image: thirdImage, tag: 3)
-            
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
-            window!.rootViewController = tabBarController
-            window!.makeKeyAndVisible()
+            setupMainPageVC(window)
             
-        }//else{
+        } else{
             var pickVC: PickTypeViewController = PickTypeViewController(nibName: "PickTypeViewController", bundle: nil)
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
             window!.rootViewController = pickVC
             window!.makeKeyAndVisible()
-        //}
+        }
 
         customizeUI()
         return true
     }
     
     //App-wide UI customization (i.e. Navigation bar color, button color, etc
-    func customizeUI(){
-        print("AppDelegate::customizeUI");
-        
+    func customizeUI(){        
         //Navigation title font
         let titleColorDictionary: NSDictionary = [NSForegroundColorAttributeName:DARKESTGRAY]
         UINavigationBar.appearance().titleTextAttributes = titleColorDictionary as [NSObject : AnyObject]

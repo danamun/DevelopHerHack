@@ -33,14 +33,12 @@ class MainPageTableViewController: PFQueryTableViewController {
     }
     
     override func queryForTable() -> PFQuery {
-        //var query:PFQuery = PFQuery(className:self.parseClassName!)
         var query : PFQuery = PFUser.query()!
-        if(objects?.count == 0)
-        {
+        if(objects?.count == 0) {
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
         }
 
-        //query.whereKey("familyArray", equalTo: currentUser!.username!)
+        // Later change this query to take in from the current user's family array.
         return query
     }
     
@@ -100,8 +98,6 @@ class MainPageTableViewController: PFQueryTableViewController {
         return headerCell
     }
     
-    
-
     /*
     // MARK: - Navigation
 
