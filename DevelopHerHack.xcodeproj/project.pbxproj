@@ -44,6 +44,10 @@
 		D02356371B91D6400016ED9B /* avatarsPenguin.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356361B91D6400016ED9B /* avatarsPenguin.png */; };
 		D023563F1B92019E0016ED9B /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023563D1B92019E0016ED9B /* TaskTableViewCell.swift */; };
 		D02356401B92019E0016ED9B /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D023563E1B92019E0016ED9B /* TaskTableViewCell.xib */; };
+		D02356451B9208880016ED9B /* avatarsDog-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356411B9208880016ED9B /* avatarsDog-select.png */; };
+		D02356461B9208880016ED9B /* betsyAvatar-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356421B9208880016ED9B /* betsyAvatar-select.png */; };
+		D02356471B9208880016ED9B /* danaAvatar-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356431B9208880016ED9B /* danaAvatar-select.png */; };
+		D02356481B9208880016ED9B /* avatarsPenguin-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356441B9208880016ED9B /* avatarsPenguin-select.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,10 @@
 		D02356361B91D6400016ED9B /* avatarsPenguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarsPenguin.png; sourceTree = "<group>"; };
 		D023563D1B92019E0016ED9B /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		D023563E1B92019E0016ED9B /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		D02356411B9208880016ED9B /* avatarsDog-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatarsDog-select.png"; sourceTree = "<group>"; };
+		D02356421B9208880016ED9B /* betsyAvatar-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "betsyAvatar-select.png"; sourceTree = "<group>"; };
+		D02356431B9208880016ED9B /* danaAvatar-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "danaAvatar-select.png"; sourceTree = "<group>"; };
+		D02356441B9208880016ED9B /* avatarsPenguin-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatarsPenguin-select.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +273,10 @@
 		D023562F1B91CA750016ED9B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D02356411B9208880016ED9B /* avatarsDog-select.png */,
+				D02356421B9208880016ED9B /* betsyAvatar-select.png */,
+				D02356431B9208880016ED9B /* danaAvatar-select.png */,
+				D02356441B9208880016ED9B /* avatarsPenguin-select.png */,
 				9CD660861B9202740051C485 /* betsyAvatar.png */,
 				9CD660841B92026D0051C485 /* danaAvatar.png */,
 				9CD660821B9202660051C485 /* avatarsDog.png */,
@@ -364,6 +376,7 @@
 				9CD6606A1B91A6D30051C485 /* TaskViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
 				9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */,
+				D02356481B9208880016ED9B /* avatarsPenguin-select.png in Resources */,
 				D02356401B92019E0016ED9B /* TaskTableViewCell.xib in Resources */,
 				9CD6606F1B91ABCB0051C485 /* CustomHeaderCell.xib in Resources */,
 				9CD6605E1B917B1C0051C485 /* MainPageTableViewCell.xib in Resources */,
@@ -374,7 +387,10 @@
 				9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */,
 				D02356331B91CA940016ED9B /* createIcon.png in Resources */,
 				9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */,
+				D02356471B9208880016ED9B /* danaAvatar-select.png in Resources */,
 				9CD660831B9202660051C485 /* avatarsDog.png in Resources */,
+				D02356461B9208880016ED9B /* betsyAvatar-select.png in Resources */,
+				D02356451B9208880016ED9B /* avatarsDog-select.png in Resources */,
 				9CD660871B9202740051C485 /* betsyAvatar.png in Resources */,
 				9CD660851B92026D0051C485 /* danaAvatar.png in Resources */,
 				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
