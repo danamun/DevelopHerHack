@@ -9,6 +9,7 @@
 import UIKit
 
 class TaskViewController: MainPageTableViewController {
+    var colorIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -101,21 +102,32 @@ class TaskViewController: MainPageTableViewController {
 
             var t = String(stringInterpolationSegment: pfObject["value"]!)
             cell?.money.text = t
-            
+            cell?.tabColor.backgroundColor = colorArray.objectAtIndex(self.colorIndex) as? UIColor
+            self.colorIndex++
+            if (self.colorIndex >= 3) {
+                self.colorIndex = 0
+            }
             cell?.taskTitle.text = pfObject["title"]! as! String
             cell?.taskDescription.text = pfObject["description"]! as! String
-//            let finalImage = pfObject["towho"]!.valueForKey("avatar") as? PFFile
-//            finalImage!.getDataInBackgroundWithBlock {
-//                (imageData: NSData?, error: NSError?) -> Void in
-//                if error == nil {
-//                    if let imageData = imageData {
-//                        cell?.avatar?.image = UIImage(data:imageData)
-//                    }
-//                }
-//            }
+            cell?.separatorInset = UIEdgeInsetsZero
+            cell?.layoutMargins = UIEdgeInsetsZero
+            cell?.preservesSuperviewLayoutMargins = false
         }
         
         return cell
+    }
+    
+    var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedRowIndex = indexPath
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == selectedRowIndex.row {
+            return 150
+        }
+        return 90
     }
 
     /*
