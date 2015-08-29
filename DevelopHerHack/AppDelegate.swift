@@ -28,12 +28,13 @@ func setupMainPageVC(window: UIWindow?) {
     let controllers = [mainVC,createTaskVC,taskVC]
     tabBarController.viewControllers = controllers
     
-    let firstImage = UIImage(named: "example1")
-    let secondImage = UIImage(named: "example2")
-    let thirdImage = UIImage(named: "example3")
-    createTaskVC.tabBarItem = UITabBarItem(title: "Create Task", image: firstImage, tag: 1)
-    taskVC.tabBarItem = UITabBarItem(title: "History", image: secondImage, tag: 2)
-    mainVC.tabBarItem = UITabBarItem(title: "Home", image: thirdImage, tag: 3)
+    let firstImage = UIImage(named: "createIcon")
+    let secondImage = UIImage(named: "homeIcon")
+    let thirdImage = UIImage(named: "historyIcon")
+    createTaskVC.tabBarItem = UITabBarItem(title: "", image: firstImage, tag: 1)
+    taskVC.tabBarItem = UITabBarItem(title: "", image: secondImage, tag: 2)
+    mainVC.tabBarItem = UITabBarItem(title: "", image: thirdImage, tag: 3)
+    
     
     let frame = UIScreen.mainScreen().bounds
     window!.rootViewController = tabBarController
@@ -54,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = UIWindow(frame: frame)
             setupMainPageVC(window)
             
-        } else{
+        }else{
             var pickVC: PickTypeViewController = PickTypeViewController(nibName: "PickTypeViewController", bundle: nil)
             let frame = UIScreen.mainScreen().bounds
             window = UIWindow(frame: frame)
