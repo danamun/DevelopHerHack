@@ -35,6 +35,9 @@
 		9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6607B1B91C13E0051C485 /* DescriptionViewController.xib */; };
 		9CD660801B91C14C0051C485 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6607E1B91C14C0051C485 /* SummaryViewController.swift */; };
 		9CD660811B91C14C0051C485 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6607F1B91C14C0051C485 /* SummaryViewController.xib */; };
+		9CD660831B9202660051C485 /* avatarsDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660821B9202660051C485 /* avatarsDog.png */; };
+		9CD660851B92026D0051C485 /* danaAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660841B92026D0051C485 /* danaAvatar.png */; };
+		9CD660871B9202740051C485 /* betsyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660861B9202740051C485 /* betsyAvatar.png */; };
 		D02356331B91CA940016ED9B /* createIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356301B91CA940016ED9B /* createIcon.png */; };
 		D02356341B91CA940016ED9B /* historyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356311B91CA940016ED9B /* historyIcon.png */; };
 		D02356351B91CA940016ED9B /* homeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D02356321B91CA940016ED9B /* homeIcon.png */; };
@@ -87,6 +90,9 @@
 		9CD6607B1B91C13E0051C485 /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionViewController.xib; sourceTree = "<group>"; };
 		9CD6607E1B91C14C0051C485 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		9CD6607F1B91C14C0051C485 /* SummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		9CD660821B9202660051C485 /* avatarsDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarsDog.png; sourceTree = "<group>"; };
+		9CD660841B92026D0051C485 /* danaAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danaAvatar.png; sourceTree = "<group>"; };
+		9CD660861B9202740051C485 /* betsyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = betsyAvatar.png; sourceTree = "<group>"; };
 		BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC3D01EEA4689AEBD9035E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02356301B91CA940016ED9B /* createIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createIcon.png; sourceTree = "<group>"; };
@@ -259,6 +265,9 @@
 		D023562F1B91CA750016ED9B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				9CD660861B9202740051C485 /* betsyAvatar.png */,
+				9CD660841B92026D0051C485 /* danaAvatar.png */,
+				9CD660821B9202660051C485 /* avatarsDog.png */,
 				D02356361B91D6400016ED9B /* avatarsPenguin.png */,
 				D02356301B91CA940016ED9B /* createIcon.png */,
 				D02356311B91CA940016ED9B /* historyIcon.png */,
@@ -365,6 +374,9 @@
 				9CD6605A1B91773E0051C485 /* PickTypeViewController.xib in Resources */,
 				D02356331B91CA940016ED9B /* createIcon.png in Resources */,
 				9CD6607D1B91C13E0051C485 /* DescriptionViewController.xib in Resources */,
+				9CD660831B9202660051C485 /* avatarsDog.png in Resources */,
+				9CD660871B9202740051C485 /* betsyAvatar.png in Resources */,
+				9CD660851B92026D0051C485 /* danaAvatar.png in Resources */,
 				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
 				9CD660301B9170B50051C485 /* Images.xcassets in Resources */,
 			);
