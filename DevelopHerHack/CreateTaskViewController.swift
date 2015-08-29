@@ -8,6 +8,12 @@
 
 import UIKit
 
+// Global Variables for creating an assignment
+var taskTitle : NSString?
+var taskDescription : NSString?
+var taskAvatar : NSString?
+var taskMoney : Float?
+
 class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSource {
     // Items for the page view controller
     var pageVC : UIPageViewController!
@@ -32,7 +38,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         //self.pageVC.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         self.addChildViewController(self.pageVC)
         self.view.addSubview(self.pageVC.view)
-        self.pageVC.didMoveToParentViewController(self)
+        //self.pageVC.didMoveToParentViewController(self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,8 +57,9 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     */
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
-        if (index >= 4) {
-            return AvatarViewController()
+        print("index at viewcontrollerindex: \(index)\n")
+        if (index > 3) {
+            return UIViewController()
         }
         var avatarVC = AvatarViewController(nibName: "AvatarViewController", bundle: nil)
         var descriptionVC = DescriptionViewController(nibName: "DescriptionViewController", bundle: nil)
@@ -69,7 +76,7 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         case 3:
             return summaryVC
         default:
-            return AvatarViewController()
+            return nil
         }
     }
     
@@ -77,21 +84,21 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         if (self.index == 0 || self.index == NSNotFound) {
             return nil
-        } else {
-            self.index--
-            return self.viewControllerAtIndex(self.index)
         }
+        self.index--
+        print("\(self.index)\n")
+        return self.viewControllerAtIndex(self.index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         if (self.index == NSNotFound) {
             return nil
         }
-        index++
-        if (index == 4) {
-            index--
+        self.index++
+        if (self.index == 4) {
             return nil
         }
+        print("\(self.index)\n")
         return self.viewControllerAtIndex(self.index)
     }
     

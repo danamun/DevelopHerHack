@@ -11,6 +11,9 @@ import UIKit
 class AvatarViewController: UIViewController {
     var pageIndex : Int = 0
 
+    @IBOutlet weak var avatar1: UIButton!
+    @IBOutlet weak var avatar2: UIButton!
+    @IBOutlet weak var avatar3: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +26,25 @@ class AvatarViewController: UIViewController {
     }
     
 
+    @IBAction func clickedAvatar1(sender: AnyObject) {
+        avatar1.selected = true
+        avatar2.selected = false
+        avatar3.selected = false
+        taskAvatar = "kevin"
+    }
+    @IBAction func clickedAvatar2(sender: AnyObject) {
+        avatar1.selected = false
+        avatar2.selected = true
+        avatar3.selected = false
+        taskAvatar = "dana"
+    }
+    @IBAction func clickedAvatar3(sender: AnyObject) {
+        avatar1.selected = false
+        avatar2.selected = false
+        avatar3.selected = true
+        taskAvatar = "betsy"
+    }
+    
     /*
     // MARK: - Navigation
 

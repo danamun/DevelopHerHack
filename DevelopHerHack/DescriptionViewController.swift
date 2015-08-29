@@ -8,12 +8,17 @@
 
 import UIKit
 
-class DescriptionViewController: UIViewController {
+class DescriptionViewController: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var newTitle: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    var placeholderText = "description of task"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        descriptionTextView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +27,10 @@ class DescriptionViewController: UIViewController {
     }
     
 
+    @IBAction func editedTitle(sender: AnyObject) {
+        taskTitle = newTitle.text
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +40,23 @@ class DescriptionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - UITextViewDelegate
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        print("went here")
+        if(textView.text == self.placeholderText) {
+            self.descriptionTextView.text = ""
+        }
+        
+        return true
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        if(textView.text == "") {
+            self.descriptionTextView.text = self.placeholderText
+        }
+        
+        taskDescription = self.descriptionTextView.text
+    }
 
 }
