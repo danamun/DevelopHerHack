@@ -28,18 +28,15 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         pageController.currentPageIndicatorTintColor = UIColor.blackColor()
         pageController.backgroundColor = UIColor.whiteColor()
         
-        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+        self.pageVC = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.PageCurl, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
         self.pageVC.dataSource = self
         
         var avatarVC = self.viewControllerAtIndex(0) as! AvatarViewController
         var viewControllers = NSArray(object: avatarVC)
         self.pageVC.setViewControllers(viewControllers as [AnyObject], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
         self.pageVC.view.frame = self.view.frame
-        //self.pageVC.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         self.addChildViewController(self.pageVC)
         self.view.addSubview(self.pageVC.view)
-        //self.pageVC.didMoveToParentViewController(self)
-        println("viewDidLoad:: index: \(index)");
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,14 +55,12 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     */
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
-        println("index at viewcontrollerindex: \(index)")
         if (index > 3) {
             return UIViewController()
         }
         var avatarVC = AvatarViewController(nibName: "AvatarViewController", bundle: nil)
         var descriptionVC = DescriptionViewController(nibName: "DescriptionViewController", bundle: nil)
         var moneyVC = MoneyViewController(nibName: "MoneyViewController", bundle: nil)
-        var summaryVC = SummaryViewController(nibName: "SummaryViewController", bundle: nil)
         
         switch(index) {
         case 0:
@@ -77,9 +72,6 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
         case 2:
             println("Return Money")
             return moneyVC
-        case 3:
-            println("Return Summary")
-            return summaryVC
         default:
             return nil
         }
@@ -87,35 +79,27 @@ class CreateTaskViewController: UIViewController,  UIPageViewControllerDataSourc
     
     // MARK: - Page View Controller Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        println("BeforeViewController::index: \(index)")
-        
         if (self.index == 0 || self.index == NSNotFound) {
-            println("Return Nil")
             return nil
         }
         self.index--
-        println("Now index: \(self.index)")
         return self.viewControllerAtIndex(self.index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        println("AfterViewController::index: \(index)")
         if (self.index == NSNotFound) {
             return nil
         }
         self.index++
-        if (self.index == 4) {
+        if (self.index == 3) {
             self.index--
-            println("Index == 4, return nil");
             return nil
         }
-
-        println("Now index:\(self.index)")
         return self.viewControllerAtIndex(self.index)
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 4
+        return 3
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {

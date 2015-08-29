@@ -16,8 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="description of task" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-T6-g7V">
+                    <rect key="frame" x="105" y="168" width="390" height="294"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8XZ-NS-K1t">
-                    <rect key="frame" x="105" y="99" width="97" height="30"/>
+                    <rect key="frame" x="105" y="99" width="390" height="30"/>
                     <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -25,18 +31,15 @@
                         <action selector="editedTitle:" destination="-1" eventType="editingDidEnd" id="UVS-Dr-SMD"/>
                     </connections>
                 </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="description of task" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-T6-g7V">
-                    <rect key="frame" x="105" y="168" width="390" height="294"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="8XZ-NS-K1t" firstAttribute="leading" secondItem="5Be-T6-g7V" secondAttribute="leading" id="E5I-Vd-3zN"/>
+                <constraint firstItem="8XZ-NS-K1t" firstAttribute="trailing" secondItem="5Be-T6-g7V" secondAttribute="trailing" id="J2r-cr-TVJ"/>
+                <constraint firstAttribute="trailing" secondItem="8XZ-NS-K1t" secondAttribute="trailing" constant="15" id="JHp-3Z-Edk"/>
                 <constraint firstAttribute="centerX" secondItem="5Be-T6-g7V" secondAttribute="centerX" id="OPR-eC-Mx9"/>
                 <constraint firstAttribute="centerX" secondItem="5Be-T6-g7V" secondAttribute="centerX" id="ZNl-ae-MSh"/>
+                <constraint firstItem="8XZ-NS-K1t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cZD-Y5-uYn"/>
             </constraints>
         </view>
     </objects>

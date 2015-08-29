@@ -34,16 +34,24 @@ class MoneyViewController: UIViewController {
         print("task avatar: \(taskAvatar)!")
         var otheruser : PFUser = query?.getFirstObject() as! PFUser
         
-        var task = PFObject(className: "FamilyTasks")
-        task.setObject(taskTitle!, forKey: "title")
-        task.setObject(taskDescription!, forKey: "description")
-        task.setObject(taskMoney!, forKey: "value")
-        task.setObject(otheruser, forKey: "towho")
-        task.setObject(PFUser.currentUser()!, forKey: "fromwho")
-        task.setObject(false, forKey: "completed")
-        task.saveInBackground()
+        var task = PFObject(className:"FamilyTasks")
+        task["title"] = taskTitle!
+        task["description"] = taskDescription
+        task["value"] = taskMoney
+        task["towho"] = otheruser
+        task["fromwho"] = PFUser.currentUser()!
+        task["completed"] = false
+        task.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
         
-        
+        var summaryVC = SummaryViewController(nibName: "SummaryViewController", bundle: nil)
+        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(summaryVC, animated: true, completion: nil)
     }
 
     /*
