@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660281B9170B50051C485 /* AppDelegate.swift */; };
+		9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6602A1B9170B50051C485 /* ViewController.swift */; };
+		9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6602C1B9170B50051C485 /* Main.storyboard */; };
+		9CD660301B9170B50051C485 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6602F1B9170B50051C485 /* Images.xcassets */; };
+		9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660311B9170B50051C485 /* LaunchScreen.xib */; };
+		9CD6603F1B9170B50051C485 /* DevelopHerHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CD660391B9170B50051C485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CD6601B1B9170B50051C485 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CD660221B9170B50051C485;
+			remoteInfo = DevelopHerHack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CD660231B9170B50051C485 /* DevelopHerHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopHerHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD660271B9170B50051C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD660281B9170B50051C485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CD6602A1B9170B50051C485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CD6602D1B9170B50051C485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CD6602F1B9170B50051C485 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CD660321B9170B50051C485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9CD660381B9170B50051C485 /* DevelopHerHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopHerHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD6603D1B9170B50051C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopHerHackTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CD660201B9170B50051C485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD660351B9170B50051C485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CD6601A1B9170B50051C485 = {
+			isa = PBXGroup;
+			children = (
+				9CD660251B9170B50051C485 /* DevelopHerHack */,
+				9CD6603B1B9170B50051C485 /* DevelopHerHackTests */,
+				9CD660241B9170B50051C485 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CD660241B9170B50051C485 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD660231B9170B50051C485 /* DevelopHerHack.app */,
+				9CD660381B9170B50051C485 /* DevelopHerHackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CD660251B9170B50051C485 /* DevelopHerHack */ = {
+			isa = PBXGroup;
+			children = (
+				9CD660281B9170B50051C485 /* AppDelegate.swift */,
+				9CD6602A1B9170B50051C485 /* ViewController.swift */,
+				9CD6602C1B9170B50051C485 /* Main.storyboard */,
+				9CD6602F1B9170B50051C485 /* Images.xcassets */,
+				9CD660311B9170B50051C485 /* LaunchScreen.xib */,
+				9CD660261B9170B50051C485 /* Supporting Files */,
+			);
+			path = DevelopHerHack;
+			sourceTree = "<group>";
+		};
+		9CD660261B9170B50051C485 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD660271B9170B50051C485 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CD6603B1B9170B50051C485 /* DevelopHerHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */,
+				9CD6603C1B9170B50051C485 /* Supporting Files */,
+			);
+			path = DevelopHerHackTests;
+			sourceTree = "<group>";
+		};
+		9CD6603C1B9170B50051C485 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD6603D1B9170B50051C485 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CD660221B9170B50051C485 /* DevelopHerHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD660421B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHack" */;
+			buildPhases = (
+				9CD6601F1B9170B50051C485 /* Sources */,
+				9CD660201B9170B50051C485 /* Frameworks */,
+				9CD660211B9170B50051C485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevelopHerHack;
+			productName = DevelopHerHack;
+			productReference = 9CD660231B9170B50051C485 /* DevelopHerHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CD660371B9170B50051C485 /* DevelopHerHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD660451B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHackTests" */;
+			buildPhases = (
+				9CD660341B9170B50051C485 /* Sources */,
+				9CD660351B9170B50051C485 /* Frameworks */,
+				9CD660361B9170B50051C485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CD6603A1B9170B50051C485 /* PBXTargetDependency */,
+			);
+			name = DevelopHerHackTests;
+			productName = DevelopHerHackTests;
+			productReference = 9CD660381B9170B50051C485 /* DevelopHerHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CD6601B1B9170B50051C485 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = danamun;
+				TargetAttributes = {
+					9CD660221B9170B50051C485 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9CD660371B9170B50051C485 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9CD660221B9170B50051C485;
+					};
+				};
+			};
+			buildConfigurationList = 9CD6601E1B9170B50051C485 /* Build configuration list for PBXProject "DevelopHerHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CD6601A1B9170B50051C485;
+			productRefGroup = 9CD660241B9170B50051C485 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CD660221B9170B50051C485 /* DevelopHerHack */,
+				9CD660371B9170B50051C485 /* DevelopHerHackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CD660211B9170B50051C485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
+				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
+				9CD660301B9170B50051C485 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD660361B9170B50051C485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CD6601F1B9170B50051C485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */,
+				9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD660341B9170B50051C485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD6603F1B9170B50051C485 /* DevelopHerHackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CD6603A1B9170B50051C485 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CD660221B9170B50051C485 /* DevelopHerHack */;
+			targetProxy = 9CD660391B9170B50051C485 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CD6602C1B9170B50051C485 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD6602D1B9170B50051C485 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CD660311B9170B50051C485 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD660321B9170B50051C485 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CD660401B9170B50051C485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CD660411B9170B50051C485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CD660431B9170B50051C485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DevelopHerHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CD660441B9170B50051C485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DevelopHerHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CD660461B9170B50051C485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DevelopHerHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevelopHerHack.app/DevelopHerHack";
+			};
+			name = Debug;
+		};
+		9CD660471B9170B50051C485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DevelopHerHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevelopHerHack.app/DevelopHerHack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CD6601E1B9170B50051C485 /* Build configuration list for PBXProject "DevelopHerHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD660401B9170B50051C485 /* Debug */,
+				9CD660411B9170B50051C485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD660421B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD660431B9170B50051C485 /* Debug */,
+				9CD660441B9170B50051C485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CD660451B9170B50051C485 /* Build configuration list for PBXNativeTarget "DevelopHerHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD660461B9170B50051C485 /* Debug */,
+				9CD660471B9170B50051C485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CD6601B1B9170B50051C485 /* Project object */;
+}
