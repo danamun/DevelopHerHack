@@ -117,6 +117,8 @@ class TaskViewController: MainPageTableViewController {
         return cell
     }
     
+    // MARK: - UITableRowDelegate
+    
     var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedRowIndex = indexPath
