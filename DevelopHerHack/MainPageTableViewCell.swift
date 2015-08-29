@@ -11,6 +11,7 @@ import UIKit
 class MainPageTableViewCell: PFTableViewCell {
     
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

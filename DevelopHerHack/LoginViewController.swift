@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var buttonContainer: UIView!
+
     
     var type : String?
     
@@ -30,6 +34,18 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         activityIndicator.hidden = true
         activityIndicator.hidesWhenStopped = true
+        
+        //UI
+
+        signInButton.layer.borderWidth = BUTTONBORDER
+        signInButton.layer.borderColor = DARKERBLUE.CGColor
+        signUpButton.layer.borderWidth = BUTTONBORDER
+        signUpButton.layer.borderColor = DARKERORANGE.CGColor
+        signUpButton.tintColor = DARKERORANGE
+        
+        buttonContainer.backgroundColor = LIGHTERGRAY
+        self.view.backgroundColor = LIGHTERGRAY
+        
     }
 
     override func didReceiveMemoryWarning() {

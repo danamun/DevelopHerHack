@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickTypeViewController" customModule="DevelopHerHack" customModuleProvider="target">
             <connections>
+                <outlet property="buttonContainer" destination="wl3-3F-yAz" id="Qan-Ld-wga"/>
                 <outlet property="childButton" destination="zbj-hn-PiH" id="7Uc-Rm-WDo"/>
                 <outlet property="parentButton" destination="Bap-72-3wc" id="qqg-az-YQc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
