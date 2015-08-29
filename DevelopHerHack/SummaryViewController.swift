@@ -10,10 +10,18 @@ import UIKit
 
 class SummaryViewController: UIViewController {
 
+    
+    @IBOutlet weak var summaryTitle: UILabel!
+    @IBOutlet weak var summaryDescription: UILabel!
+    @IBOutlet weak var summaryMoney: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        summaryTitle.text = taskTitle as? String
+        summaryDescription.text = taskDescription as? String
+        summaryMoney.text = NSString(format: "%f", taskMoney!) as String
     }
 
     override func didReceiveMemoryWarning() {
