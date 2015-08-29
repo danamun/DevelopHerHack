@@ -93,7 +93,7 @@ class LoginViewController: UIViewController {
     */
     
     func setMainViewController() {
-        var mainVC: MainPageTableViewController = MainPageTableViewController(className: "Items")
+        var mainVC: MainPageTableViewController = MainPageTableViewController(className: "User")
         UINavigationBar.appearance().tintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         UINavigationBar.appearance().barTintColor = UIColor(red: 0.59, green: 1.0, blue: 0.80, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
