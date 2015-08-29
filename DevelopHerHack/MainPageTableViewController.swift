@@ -42,10 +42,6 @@ class MainPageTableViewController: PFQueryTableViewController {
         return query
     }
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier:String = "Cell"
         
@@ -94,10 +90,7 @@ class MainPageTableViewController: PFQueryTableViewController {
         if(headerCell == nil) {
             headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderCell", owner: self, options: nil)[0] as? CustomHeaderCell
         }
-        
-        //headerCell!.frame = CGRectMake(0, 15, self.view.frame.width, 100)
         headerCell!.username.text = self.currentUser?.username
-
         
         var query = PFUser.query()!
         query.whereKey("username", equalTo: self.currentUser!.username!)
