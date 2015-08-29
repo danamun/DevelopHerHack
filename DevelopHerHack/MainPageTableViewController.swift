@@ -54,7 +54,7 @@ class MainPageTableViewController: PFQueryTableViewController {
         };
         completeButton.backgroundColor = LIGHTERORANGE
         
-        var declineButton: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Complete") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+        var declineButton: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Decline") { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
             
             //Send parse info on the Decline
             
@@ -125,7 +125,7 @@ class MainPageTableViewController: PFQueryTableViewController {
             headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderCell", owner: self, options: nil)[0] as? CustomHeaderCell
         }
         headerCell!.username.text = self.currentUser?.username
-        
+
         var query = PFUser.query()!
         query.whereKey("username", equalTo: self.currentUser!.username!)
         query.findObjectsInBackgroundWithBlock {

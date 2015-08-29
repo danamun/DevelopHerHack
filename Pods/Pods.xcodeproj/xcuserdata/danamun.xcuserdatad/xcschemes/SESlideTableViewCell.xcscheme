@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "224EE92EFFE4E5278F5A5B57"
-               BuildableName = "libParseUI.a"
-               BlueprintName = "ParseUI"
+               BlueprintIdentifier = "CAD525BEE9B311B8D8D28451"
+               BuildableName = "libSESlideTableViewCell.a"
+               BlueprintName = "SESlideTableViewCell"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

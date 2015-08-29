@@ -24,25 +24,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SESlideTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A2D10DB91044531592122667DA4A8D2</key>
+		<key>1BA3F660F709F363374D8FCC245FCB63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>881166FF080B202FB7A04A017DC06D0E</key>
+		<key>707D96A04100FFBD2F4C4BA52827FA94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A5E54941769F502C47E59574B295569</key>
+		<key>B30413BB917E1243E0B31976542B4246</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4191A80C8D85657BC24A5BD9172638D</key>
+		<key>C59209641CE747FF7AC347EEC5201C59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E97CB636F71BA1B2737F4C009FED8E5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
