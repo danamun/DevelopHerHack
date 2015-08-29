@@ -15,7 +15,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        Parse.setApplicationId("9rV8VrNcQmtUw04ejgN11cbWB3zwiP572BRCrX4w", clientKey: "8pGkwcZ6hCNgBPDxqDBJsapKo35BFwqQPU55rEAe")
         // Override point for customization after application launch.
+        /*if (PFUser.currentUser() != nil) {
+            var mainVC: MainPageTableViewController = MainPageTableViewController(className: "FamilyTasks")
+            UINavigationBar.appearance().barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+            //var font = UIFont(name: "Little days", size: 20)
+            
+            var navigationVC:UINavigationController = UINavigationController(rootViewController: mainVC)
+            //navigationVC.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: font!]
+            //navigationVC.navigationBar.topItem?.title = "little days"
+            navigationVC.navigationBar.translucent = false
+            
+            let frame = UIScreen.mainScreen().bounds
+            window = UIWindow(frame: frame)
+            window!.rootViewController = navigationVC
+            window!.makeKeyAndVisible()
+            
+        } else{*/
+            var logInVC: LoginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            let frame = UIScreen.mainScreen().bounds
+            window = UIWindow(frame: frame)
+            window!.rootViewController = logInVC
+            window!.makeKeyAndVisible()
+        //}
+
         return true
     }
 

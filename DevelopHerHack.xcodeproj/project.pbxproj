@@ -14,6 +14,10 @@
 		9CD660301B9170B50051C485 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6602F1B9170B50051C485 /* Images.xcassets */; };
 		9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660311B9170B50051C485 /* LaunchScreen.xib */; };
 		9CD6603F1B9170B50051C485 /* DevelopHerHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */; };
+		9CD660511B91730E0051C485 /* MainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6604F1B91730E0051C485 /* MainPageTableViewController.swift */; };
+		9CD660521B91730E0051C485 /* MainPageTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660501B91730E0051C485 /* MainPageTableViewController.xib */; };
+		9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD660531B91735B0051C485 /* LoginViewController.swift */; };
+		9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD660541B91735B0051C485 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 		9CD660381B9170B50051C485 /* DevelopHerHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopHerHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD6603D1B9170B50051C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD6603E1B9170B50051C485 /* DevelopHerHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopHerHackTests.swift; sourceTree = "<group>"; };
+		9CD660481B9171B40051C485 /* DevelopHerHack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevelopHerHack-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CD6604F1B91730E0051C485 /* MainPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageTableViewController.swift; sourceTree = "<group>"; };
+		9CD660501B91730E0051C485 /* MainPageTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageTableViewController.xib; sourceTree = "<group>"; };
+		9CD660531B91735B0051C485 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9CD660541B91735B0051C485 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC3D01EEA4689AEBD9035E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,12 +93,17 @@
 		9CD660251B9170B50051C485 /* DevelopHerHack */ = {
 			isa = PBXGroup;
 			children = (
+				9CD6604E1B91721A0051C485 /* Task */,
+				9CD6604D1B91720B0051C485 /* CreateTask */,
+				9CD6604C1B9172060051C485 /* MainPage */,
+				9CD6604B1B9171FB0051C485 /* Login */,
 				9CD660281B9170B50051C485 /* AppDelegate.swift */,
 				9CD6602A1B9170B50051C485 /* ViewController.swift */,
 				9CD6602C1B9170B50051C485 /* Main.storyboard */,
 				9CD6602F1B9170B50051C485 /* Images.xcassets */,
 				9CD660311B9170B50051C485 /* LaunchScreen.xib */,
 				9CD660261B9170B50051C485 /* Supporting Files */,
+				9CD660481B9171B40051C485 /* DevelopHerHack-Bridging-Header.h */,
 			);
 			path = DevelopHerHack;
 			sourceTree = "<group>";
@@ -117,6 +131,38 @@
 				9CD6603D1B9170B50051C485 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CD6604B1B9171FB0051C485 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9CD660531B91735B0051C485 /* LoginViewController.swift */,
+				9CD660541B91735B0051C485 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		9CD6604C1B9172060051C485 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				9CD6604F1B91730E0051C485 /* MainPageTableViewController.swift */,
+				9CD660501B91730E0051C485 /* MainPageTableViewController.xib */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		9CD6604D1B91720B0051C485 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CreateTask;
+			sourceTree = "<group>";
+		};
+		9CD6604E1B91721A0051C485 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Task;
 			sourceTree = "<group>";
 		};
 		C1EF208E77F13B060B7DBE66 /* Frameworks */ = {
@@ -218,7 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD660561B91735B0051C485 /* LoginViewController.xib in Resources */,
 				9CD6602E1B9170B50051C485 /* Main.storyboard in Resources */,
+				9CD660521B91730E0051C485 /* MainPageTableViewController.xib in Resources */,
 				9CD660331B9170B50051C485 /* LaunchScreen.xib in Resources */,
 				9CD660301B9170B50051C485 /* Images.xcassets in Resources */,
 			);
@@ -271,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD660551B91735B0051C485 /* LoginViewController.swift in Sources */,
+				9CD660511B91730E0051C485 /* MainPageTableViewController.swift in Sources */,
 				9CD6602B1B9170B50051C485 /* ViewController.swift in Sources */,
 				9CD660291B9170B50051C485 /* AppDelegate.swift in Sources */,
 			);
@@ -400,9 +450,12 @@
 			baseConfigurationReference = BB5BA17A836887E6A0323BC6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevelopHerHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevelopHerHack/DevelopHerHack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,9 +464,11 @@
 			baseConfigurationReference = 4C2B4ECCD6021EB7CD6D506C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevelopHerHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevelopHerHack/DevelopHerHack-Bridging-Header.h";
 			};
 			name = Release;
 		};
